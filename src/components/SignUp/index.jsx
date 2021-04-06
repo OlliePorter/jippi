@@ -5,7 +5,7 @@ const SignUp = () => {
   const [ state, setState ] = useState(
     { 
       firstName: '',
-      secondName: '',
+      lastName: '',
       email: '',
       password: '',
     }
@@ -19,7 +19,7 @@ const SignUp = () => {
 
   const handleLastNameChange = (e) => {
     setState({
-      secondName: e.target.value,
+      lastName: e.target.value,
     });
   }
 
@@ -29,17 +29,11 @@ const SignUp = () => {
 		});
 	}
 
-	const handlePasswordChange = (e) => {
-		setState({
-			password: e.target.value,
-		});
-	}
-
   async function newUser() {
     try {
       const response = await axios({
         method: 'POST',
-        url: 'Api route for posting data to database',
+        url: 'backend/users',
         data: { user: state },
         crossdomain: true,
       });
@@ -52,8 +46,8 @@ const SignUp = () => {
 
   const onSubmitHandler = async (e) => {
 		e.preventDefault();
-		const { firstName, secondName, email, password } = state;
-		await newUser({firstName, secondName, email, password}).then(alert('Finished!'));
+		const { firstName, lastName, email } = state;
+		await newUser({firstName, lastName, email}).then(alert('Finished!'));
 	}
 
   return (
@@ -69,7 +63,7 @@ const SignUp = () => {
       <input
         onChange={handleLastNameChange}
         type="text"
-        name="secondname"
+        name="lastname"
         placeholder="Last name"
         required
       />
@@ -80,13 +74,6 @@ const SignUp = () => {
         placeholder="Email"
         required
       /> 
-      <input
-        onChange={handlePasswordChange}
-        type="password"
-        name="password"
-        placeholder="Password"
-        required
-      />
       <button type="submit">
         Create Account
       </button>
