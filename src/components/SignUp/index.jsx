@@ -4,80 +4,79 @@ import axios from 'axios';
 const SignUp = () => {
   const [ state, setState ] = useState(
     { 
-      firstName: '',
-      lastName: '',
+      firstname: '',
+      lastname: '',
       email: '',
-      password: '',
     }
   );
 
-  const handleFirstNameChange = (e) => {
+  const handleChange = (e) => {
+    const {name, value} = e.target
     setState({
-      firstName: e.target.value,
-    });
-  }
+      [name]: value
+    })
+  };
+  
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const {firstname, lastname, email} = state;
 
-  const handleLastNameChange = (e) => {
-    setState({
-      lastName: e.target.value,
-    });
-  }
-
-	const handleEmailChange = (e) => {
-		setState({
-			email: e.target.value,
-		});
-	}
-
-  async function newUser() {
-    try {
-      const response = await axios({
-        method: 'POST',
-        url: 'backend/users',
-        data: { user: state },
-        crossdomain: true,
-      });
-      const { token } = response.data;
-      localStorage.setItem('jwt', token);	
-    } catch {
-      alert('THERE WAS A PROBLEM');
+    const user = {
+      firstname: firstname,
+      lastname: lastname,
+      email: email,
     }
+
+    axios.post('http://localhost:3001/users', {user}, {withCredentials: true})
+    .then(response => {
+      if (response.data.status === 'created') {
+        // handleLogin(response.data)
+        redirect()
+      } else {
+        setState({
+          errors: response.data.errors
+        })
+      }
+    })
+    .catch(error => console.log('api errors:', error))
   };
 
-  const onSubmitHandler = async (e) => {
-		e.preventDefault();
-		const { firstName, lastName, email } = state;
-		await newUser({firstName, lastName, email}).then(alert('Finished!'));
-	}
+  const redirect = () => {
+    // history.push('/')
+  };
+
+  const {firstname, lastname, email} = state;
 
   return (
-    <form onSubmit={onSubmitHandler}>
+    <div>
       <h1>Sign Up</h1>
-      <input
-        onChange={handleFirstNameChange}
-        type="text"
-        name="firstname"
-        placeholder="First name"
-        required
+      <form onSubmit={handleSubmit}>
+        <input
+          placeholder="firstname"
+          type="text"
+          name="firstname"
+          value={firstname}
+          onChange={handleChange}
+        />
+        <input
+          placeholder="lastname"
+          type="text"
+          name="lastname"
+          value={lastname}
+          onChange={handleChange}
       />
-      <input
-        onChange={handleLastNameChange}
-        type="text"
-        name="lastname"
-        placeholder="Last name"
-        required
-      />
-      <input
-        onChange={handleEmailChange}
-        type="email"
-        name="email"
-        placeholder="Email"
-        required
-      /> 
-      <button type="submit">
-        Create Account
-      </button>
-    </form>
+        <input
+          placeholder="email"
+          type="text"
+          name="email"
+          value={email}
+          onChange={handleChange}
+        />
+        <button placeholder="submit" type="submit">
+          Sign Up
+        </button>
+      </form>
+    </div>
   );
 };
 
