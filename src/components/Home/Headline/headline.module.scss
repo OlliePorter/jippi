@@ -3,63 +3,97 @@
 	padding-bottom: 40px;
 	background-color: #F1FCFB;
 	font-family: 'Varela', sans-serif;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-evenly;
 
-	.innerContainer {
-		max-width: 400px;
-		margin-right: 60px;
+	.innerCover {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 
-		.logo {
-			background: white;
-			box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-			border-radius: 20px;
-			width: 106px;
+		.innerContainerOne {
+			max-width: 400px;
+			margin-right: 60px;
+			padding-left: 80px;
+
+			.logo {
+				background: white;
+				box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+				border-radius: 20px;
+				width: 106px;
+			}
+
+			.title {
+				font-weight: normal;
+				color: #1d2630;
+				font-size: 56px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+		
+			.subtitle {
+				color: #3d5066;
+				font-size: 18px;
+				margin-top: 0;
+				margin-bottom: 25px;
+			}
+
+			button {
+				background-color: #13b6b8;
+				color: white;
+				width: 150px;
+				max-width: 200px;
+				min-width: 100px;
+				padding: 10px 30px;
+				border-radius: 50px;
+				font-size: 16px;
+				line-height: 30px;
+				font-weight: bold;
+				text-align: center;
+				border: none;
+				font-family: 'Varela', sans-serif;
+				cursor: pointer;
+				min-width: 200px;
+				transition: transform 200ms ease;
+
+				&:hover {
+					transform: translate(0px, -2px);
+				}
+			}
 		}
 
-		.title {
-			font-weight: normal;
-			color: #1d2630;
-			font-size: 56px;
-			margin-top: 20px;
-			margin-bottom: 20px;
+		.image {
+			width: 600px;
+			height: 400px;
 		}
-	
-		.subtitle {
-			color: #3d5066;
-			font-size: 18px;
-			margin-top: 0;
-			margin-bottom: 25px;
-		}
+	}
 
-		button {
-			background-color: #13b6b8;
-			color: white;
-			width: 150px;
-			max-width: 200px;
-			min-width: 100px;
-			padding: 10px 30px;
-			border-radius: 50px;
-			font-size: 16px;
-			line-height: 30px;
-			font-weight: bold;
-			text-align: center;
-			border: none;
-			font-family: 'Varela', sans-serif;
-			cursor: pointer;
-			min-width: 200px;
+	.innerContainerTwo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 20px;
+
+		.seeMore {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 			transition: transform 200ms ease;
+			cursor: pointer;
 
 			&:hover {
 				transform: translate(0px, -2px);
 			}
-		}
-	}
 
-	.image {
-		width: 600px;
-		height: 400px;
+			p {
+				margin-top: 0;
+				font-size: 14px;
+				color: #13b6b8;
+				margin-bottom: 6px;
+			}
+		}
+
+		// &:hover {
+		// 	transform: translate(0px, -2px);
+		// }
 	}
 }
