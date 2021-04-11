@@ -14,7 +14,7 @@ const Features = () => {
 			<div className={styles.container}>
 				<div className={styles.text}>
 					<p className={styles.title}>Build close relationships</p>
-					<p className={styles.subtitle}>For more of a personal touch, members are paired off with a deck topics to prompt discussions and develop intimacy in particular areas. Topics like vulnerability, compassion, grief, shame, gratitude, loss, forgiveness and many more.</p>
+					<p className={styles.subtitle}>For more of a personal touch, members are paired off with a deck of topics to prompt discussions and develop intimacy in particular areas. Topics like vulnerability, compassion, grief, shame, gratitude, loss, forgiveness and many more.</p>
 				</div>
 				<img src="/online.png" alt="video call" className={styles.imageAlt}></img>
 			</div>
