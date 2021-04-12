@@ -5,7 +5,7 @@ const Features = () => {
   return (
 		<>
 			<div className={styles.container}>
-				<img src="/campfire.png" alt="camp fire" className={styles.image}></img>
+				<img src="/campfire.png" alt="camp fire" className={styles.imageAltTwo}></img>
 				<div className={styles.text}>
 					<p className={styles.title}>Weekly tribe check-ins</p>
 					<p className={styles.subtitle}>Tribes are a way to organise online gatherings around a ‘camp-fire’ and provides a structured forum through which tribe members can share stories, give advice or offer emotional support.</p>
@@ -19,10 +19,10 @@ const Features = () => {
 				<img src="/online.png" alt="video call" className={styles.imageAlt}></img>
 			</div>
 			<div className={styles.container}>
-				<img src="/graduation.png" alt="graduation cap" className={styles.imageAltTwo}></img>
+				<img src="/love.png" alt="graduation cap" className={styles.imageAltTwo}></img>
 				<div className={styles.text}>
-					<p className={styles.title}>Learn life skills</p>
-					<p className={styles.subtitle}>We've curated the best adoption resources available and developed structured training courses which centre around key life skills. We believe that adoption learning should be accessible to all and not break the wallet like therapy.</p>
+					<p className={styles.title}>Change destructive behaviours</p>
+					<p className={styles.subtitle}>We’ve developed skill pathways to help support the formation of positive habits. Unlearn negative beliefs, resolve painful feelings, improve your relationships. We believe that learning the skills to cope with adoption should be accessible to all and not break the wallet like therapy.</p>
 				</div>
 			</div>
 		</>
