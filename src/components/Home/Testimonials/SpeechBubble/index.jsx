@@ -13,7 +13,7 @@ const SpeechBubble = ({speechText, imageUrl, name}) => {
         <div className={styles.speechCircle}></div>
         <img src={imageUrl} alt="Person" className={styles.testimonialImage}/>
         <p className={styles.altSpeechText}>{name}</p>
-        <p className={styles.altSpeechText}>Early user</p>
+        <p className={styles.altSpeechText}>Early member</p>
     </div>
   );
 };

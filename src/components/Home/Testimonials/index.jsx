@@ -13,7 +13,7 @@ const Testimonials = () => {
           name="Jonathan W"
         />
         <SpeechBubble 
-          speechText="I find pathways really useful. I learnt so much about myself
+          speechText="I find pathways really useful. I've learned so much about myself
           and the way my brain works as an adopted person."
           imageUrl="/marcus.jpg"
           name="Marcus F"
