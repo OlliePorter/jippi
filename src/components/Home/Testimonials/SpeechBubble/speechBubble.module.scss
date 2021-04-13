@@ -1,0 +1,50 @@
+
+.speechContainer {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	.speechSquare {
+		background: #3d5066;
+		width: 340px;
+    min-height: 140px;
+		border-radius: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		.speechText {
+      font-family: 'Varela', sans-serif;
+			padding: 8px 24px;
+			color: white;
+		}
+	}
+
+	.speechCircle {
+		background: #3d5066;
+		width: 30px;
+		height: 30px;
+		border-radius: 100%;
+		margin-top: -20px;
+	}
+
+	.testimonialImage {
+		margin: 20px;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		object-fit: cover;
+		border: 3px #3d5066 solid;
+	}
+
+  .altSpeechText {
+    font-family: 'Varela', sans-serif;
+    margin: 0;
+    padding-bottom: 8px;
+
+    &:first-of-type {
+      font-weight: bold;
+    }
+  }
+}
