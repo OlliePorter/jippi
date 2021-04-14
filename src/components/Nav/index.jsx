@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
 import Headroom from 'react-headroom';
-import { Link } from 'react-router-dom';
 import {
-  Route,
   NavLink,
-  HashRouter
+  HashRouter,
+	useHistory,
 } from "react-router-dom";
 
 import styles from './nav.module.scss'
+import SignUp from '../SignUp';
 
 const Nav = () => {
+	const history = useHistory();
   const [isHide, setIsHide] = useState(false);  
 
 	const navClassNames = () => {
@@ -26,11 +27,12 @@ const Nav = () => {
 				onUnpin={() => setIsHide(true)}
 			>
 				<ul className={navClassNames()}>
-					<img src="/jippy_blue.png"className={styles.joyerLogo} alt="JOYER logo"/>
+					<img src="/jippy_blue.png"className={styles.jippiLogo} alt="Jippi logo"/>
 					<div className={styles.innerNavContainer}>
-						<li><NavLink exact to="/" className={styles.joyerText}>Home</NavLink></li>
-						<li><NavLink exact to="/about-us" className={styles.joyerText}>About Us</NavLink></li>
-						<li><button component={Link} variant="outlined" to="/sign-up" className={styles.navButton}>Sign Up</button></li>
+						<li><NavLink exact to="/" className={styles.jippiText}>Home</NavLink></li>
+						<li><NavLink exact to="/about_us" className={styles.jippiText}>About Us</NavLink></li>
+						{/* <li><button onClick={() => history.push('/sign_up')} className={styles.navButton}>Sign Up</button></li> */}
+						<li><NavLink exact to="/sign_up" className={styles.navButton}>Sign Up</NavLink></li>
 					</div>
 				</ul>
 			</Headroom>
