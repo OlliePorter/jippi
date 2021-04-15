@@ -5,6 +5,7 @@ import {Switch, Route, HashRouter} from 'react-router-dom'
 import Nav from './components/Nav';
 import Home from './components/Home';
 import SignUp from './components/SignUp';
+import AboutUs from './components/AboutUs';
 
 import './App.scss';
 
@@ -16,6 +17,9 @@ const App = () => {
         <Switch>
           <Route exact path='/'>
             <Home />
+          </Route> 
+          <Route exact path='/about_us'>
+            <AboutUs />
           </Route> 
           <Route exact path='/sign_up'>
             <SignUp />
