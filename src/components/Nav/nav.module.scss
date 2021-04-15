@@ -36,11 +36,9 @@
 			font-weight: 300;
 			font-family: 'Varela', sans-serif;
 
-			.selected {
+			&.selected {
 				border-bottom:1px solid #3d5066;
 				padding-bottom:2px;
-				transition: all 0.2s linear;
-				-webkit-transition: all 0.2s linear;
 			}
 		}
 		
