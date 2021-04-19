@@ -5,7 +5,7 @@ const Features = () => {
   return (
 		<>
 			<div className={styles.container}>
-				<img src="/campfire.png" alt="camp fire" className={styles.imageAltTwo}></img>
+				<img src="/campfire.png" alt="camp fire" className={styles.image}></img>
 				<div className={styles.text}>
 					<p className={styles.title}>Weekly tribe check-ins</p>
 					<p className={styles.subtitle}>Tribes are a way to organise online gatherings around a ‘camp-fire’ and provides a structured forum through which tribe members can share stories, give advice or offer emotional support.</p>
