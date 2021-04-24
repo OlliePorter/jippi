@@ -14,6 +14,10 @@
 	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 	transition:top .3s;
 
+	@media (max-width: 768px) {
+		padding: 0;
+	}
+
 	&.hide {
 		top: -100px;
 	}
@@ -66,6 +70,11 @@
 			align-items: center;
 			transition: transform 200ms ease;
 			font-size: 14px;
+
+
+			@media (max-width: 768px) {
+				width: 88px;
+			}
 
 			&:hover {
 				transform: translate(0px, -2px);

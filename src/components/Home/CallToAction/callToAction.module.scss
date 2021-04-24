@@ -10,10 +10,20 @@
 		align-items: center;
 		justify-content: center;
 
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
+
 		.innerContainerOne {
 			max-width: 400px;
 			margin-right: 60px;
 			padding-left: 80px;
+			text-align: center;
+
+			@media (max-width: 768px) {
+				margin-right: 40px;
+				padding-left: 40px;
+			}
 
 			.title {
 				font-weight: bold;
@@ -21,6 +31,10 @@
 				font-size: 36px;
 				margin-top: 20px;
 				margin-bottom: 20px;
+
+				@media (max-width: 768px) {
+					font-size: 30px;
+				}
 			}
 		
 			.subtitle {
@@ -28,13 +42,17 @@
 				font-size: 18px;
 				margin-top: 0;
 				margin-bottom: 25px;
+
+
+				@media (max-width: 768px) {
+					font-size: 16px;
+				}
 			}
 
 			button {
 				background-color: #13b6b8;
 				color: white;
 				width: 150px;
-				max-width: 200px;
 				min-width: 100px;
 				padding: 10px 30px;
 				border-radius: 50px;
@@ -48,6 +66,10 @@
 				min-width: 200px;
 				transition: transform 200ms ease;
 
+				@media (max-width: 768px) {
+					width: 100%;
+				}
+
 				&:hover {
 					transform: translate(0px, -2px);
 				}
@@ -56,6 +78,11 @@
 
 		.image {
 			height: 400px;
+
+			@media (max-width: 768px) {
+				width: 300px;
+    		height: 200px;
+			}
 		}
 	}
 }

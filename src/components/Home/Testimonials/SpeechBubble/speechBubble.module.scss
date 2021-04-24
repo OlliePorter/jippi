@@ -5,6 +5,10 @@
 	flex-direction: column;
 	padding-left: 20px;
 
+	@media (max-width: 768px) {
+		margin-bottom: 40px;
+	}
+
 	.speechSquare {
 		background: #3d5066;
 		width: 340px;
