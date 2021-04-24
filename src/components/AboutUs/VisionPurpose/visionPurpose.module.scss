@@ -6,6 +6,11 @@
 	flex-direction: row;
 	align-items: center;
 
+	@media (max-width: 768px) {
+		// margin-bottom: 20px;
+		flex-direction: column;
+	}
+
 	.card {
 		min-height: 312px;
 		margin: 40px;
@@ -15,12 +20,25 @@
 		border-radius: 20px;
 		box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 
+		@media (max-width: 768px) {
+			margin: 20px;
+			margin-left: 20px !important;
+
+			&:last-of-type {
+				margin-top: 0;
+			}
+		}
+
 		&:last-of-type {
 			margin-left: 0;
 		}
 
 		.image {
 			height: 180px;
+
+			@media (max-width: 768px) {
+				height: 130px;
+			}
 		}
 
 		p:first-of-type {

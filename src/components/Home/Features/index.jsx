@@ -1,7 +1,15 @@
 import React from 'react';
+import classNames from 'classnames';
+
 import styles from './features.module.scss'
 
 const Features = () => {
+	const containerClassNames = () => {
+    return classNames(styles.container, {
+      [styles.containerSwap]: true,
+    });
+  };
+
   return (
 		<>
 			<div className={styles.container}>
@@ -11,7 +19,7 @@ const Features = () => {
 					<p className={styles.subtitle}>Tribes are a way to organise online gatherings around a ‘camp-fire’ and provides a structured forum through which tribe members can share stories, give advice or offer emotional support.</p>
 				</div>
 			</div>
-			<div className={styles.container}>
+			<div className={containerClassNames()}>
 				<div className={styles.text}>
 					<p className={styles.title}>Build close relationships</p>
 					<p className={styles.subtitle}>For more of a personal touch, members are paired off with a deck of topics to prompt discussions and develop intimacy in particular areas. Topics like vulnerability, compassion, grief, shame, gratitude, loss, forgiveness and many more.</p>

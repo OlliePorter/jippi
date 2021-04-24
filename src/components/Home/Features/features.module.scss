@@ -12,6 +12,10 @@
 		margin-left: 40px;
     margin-right: 40px;
 		flex-direction: column;
+
+		&.containerSwap {
+			flex-direction: column-reverse;
+		}
 	}
 
 	.image {
@@ -24,17 +28,13 @@
 
 	.imageAlt {
 		width: 400px;
-
-		@media (max-width: 768px) {
-			width: 300px;
-		}
 	}
 
 	.imageAltTwo {
 		width: 500px;
 
 		@media (max-width: 768px) {
-			width: 300px;
+			width: 400px;
 		}
 	}
 
@@ -47,6 +47,7 @@
 		@media (max-width: 768px) {
 			width: auto;
 			margin-left: 0;
+			margin-bottom: 24px;
 		}
 
 		.title {
@@ -54,10 +55,6 @@
 			font-size: 24px;
 			line-height: 30px;
 			font-weight: bold;
-
-			@media (max-width: 768px) {
-				// margin-left: 80px;
-			}
 		}
 
 		.subtitle {
@@ -66,11 +63,6 @@
 			font-size: 16px;
 			line-height: 28px;
 			font-weight: 300;
-
-			@media (max-width: 768px) {
-				// margin-left: 80px;
-				// margin-right: 80px;
-			}
 		}
 	}	
 }
