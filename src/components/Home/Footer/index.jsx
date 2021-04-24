@@ -8,6 +8,7 @@ const Footer = () => {
 
   return (
 		<div className={styles.container}>
+			<a href="#">Privacy policy</a>
 			<p>Copyright © {year} Jippi. All rights reserved.</p>
 		</div>
   );
