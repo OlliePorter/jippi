@@ -1,81 +1,46 @@
-import React, { useState } from 'react';
-import axios from 'axios';
+import React from 'react';
+import Mailchimp from 'react-mailchimp-form';
+
+import styles from './signUp.module.scss'
 
 const SignUp = () => {
-  const [ state, setState ] = useState(
-    { 
-      firstname: '',
-      lastname: '',
-      email: '',
-    }
-  );
-
-  const handleChange = (e) => {
-    const {name, value} = e.target
-    setState({
-      [name]: value
-    })
-  };
-  
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const {firstname, lastname, email} = state;
-
-    const user = {
-      firstname: firstname,
-      lastname: lastname,
-      email: email,
-    }
-
-    axios.post('http://localhost:3001/users', {user}, {withCredentials: true})
-    .then(response => {
-      if (response.data.status === 'created') {
-        // handleLogin(response.data)
-        redirect()
-      } else {
-        setState({
-          errors: response.data.errors
-        })
-      }
-    })
-    .catch(error => console.log('api errors:', error))
-  };
-
-  const redirect = () => {
-    // history.push('/')
-  };
-
-  const {firstname, lastname, email} = state;
-
   return (
     <div>
-      <h1>Sign Up</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          placeholder="firstname"
-          type="text"
-          name="firstname"
-          value={firstname}
-          onChange={handleChange}
-        />
-        <input
-          placeholder="lastname"
-          type="text"
-          name="lastname"
-          value={lastname}
-          onChange={handleChange}
+      <p>Sign Up</p>
+      <Mailchimp
+        action="https://joyerapp.us20.list-manage.com/subscribe/post?u=9c4cca26d3bea1021320b9967&amp;id=acadd8479b"
+        className={styles.container}
+        fields={[
+          {
+            name: 'EMAIL',
+            placeholder: 'Email',
+            type: 'email',
+            required: true
+          },
+          {
+            name: 'FNAME',
+            placeholder: 'First Name',
+            type: 'text',
+            required: true
+          },
+          {
+            name: 'LNAME',
+            placeholder: 'Last Name',
+            type: 'text',
+            required: true
+          }
+        ]}
+        messages = {
+          {
+            sending: "Sending...",
+            success: "Thanks for joining us!",
+            error: "An unexpected internal error has occurred.",
+            empty: "Please enter in some information.",
+            duplicate: "Too many subscribe attempts for this email address",
+            button: "Sign Up"
+          }
+        }
       />
-        <input
-          placeholder="email"
-          type="text"
-          name="email"
-          value={email}
-          onChange={handleChange}
-        />
-        <button placeholder="submit" type="submit">
-          Sign Up
-        </button>
-      </form>
     </div>
   );
 };

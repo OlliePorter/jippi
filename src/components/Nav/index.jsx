@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 
 import styles from './nav.module.scss'
-import SignUp from '../SignUp';
 
 const Nav = () => {
   const [isHidden, setIsHidden] = useState(false);  
