@@ -11,9 +11,12 @@ import SignUp from '../SignUp';
 
 const Nav = () => {
   const [isHidden, setIsHidden] = useState(false);  
-	const [isActive, setIsActive] = useState('home');
+	const isActiveLinkInStorage = localStorage.getItem('activeLink');
+	const homeOrActiveTab = isActiveLinkInStorage ? isActiveLinkInStorage : 'home';
+	const [isActive, setIsActive] = useState(homeOrActiveTab);
 
 	const setActiveLink = (linkName) => {
+		localStorage.setItem('activeLink', linkName);
 		setIsActive(linkName);
 	}
 
