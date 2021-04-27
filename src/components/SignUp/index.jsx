@@ -35,10 +35,10 @@ const SignUp = () => {
           messages = {
             {
               sending: "Sending...",
-              success: "Done, thanks for joining us!",
-              error: "An unexpected internal error has occurred.",
-              empty: "Please enter in some information.",
-              duplicate: "Too many subscribe attempts for this email address",
+              success: "Done, we'll be in touch!",
+              error: "An error has occurred",
+              empty: "Please enter in some info",
+              duplicate: "Too many attempts",
               button: "Sign Up"
             }
           }
