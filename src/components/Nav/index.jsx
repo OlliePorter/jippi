@@ -16,6 +16,7 @@ const Nav = () => {
 
 	const setActiveLink = (linkName) => {
 		localStorage.setItem('activeLink', linkName);
+		window.scrollTo(0, 0);
 		setIsActive(linkName);
 	}
 

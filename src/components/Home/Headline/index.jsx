@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import styles from './headline.module.scss'
 
 const Headline = () => {
@@ -12,7 +13,7 @@ const Headline = () => {
 					<img src="/jippi_blue_square.png" alt="jippi logo" className={styles.logo}></img>
 					<p className={styles.title}>Find your tribe</p>
 					<p className={styles.subtitle}>An online adoption community for building relationships and alleviating loneliness.</p>
-					<button>Sign Up</button>
+					<NavLink exact to="/sign_up" className={styles.signUpButton}>Sign Up</NavLink>
 				</div>
     	</div>
 			<div className={styles.innerContainerTwo}>

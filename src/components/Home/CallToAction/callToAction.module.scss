@@ -41,37 +41,35 @@
 				color: #3d5066;
 				font-size: 18px;
 				margin-top: 0;
-				margin-bottom: 25px;
-
+				margin-bottom: 40px;
 
 				@media (max-width: 768px) {
 					font-size: 16px;
 				}
 			}
 
-			button {
+			.signUpButton {
+				position: relative;
 				background-color: #13b6b8;
 				color: white;
 				width: 150px;
 				min-width: 100px;
-				padding: 10px 30px;
+				padding: 16px 70px;
 				border-radius: 50px;
 				font-size: 16px;
 				line-height: 30px;
+				text-decoration: none;
 				font-weight: bold;
 				text-align: center;
 				border: none;
 				font-family: 'Varela', sans-serif;
 				cursor: pointer;
 				min-width: 200px;
-				transition: transform 200ms ease;
-
-				@media (max-width: 768px) {
-					width: 100%;
-				}
+				transition: top ease 200ms;
+				top: 0;
 
 				&:hover {
-					transform: translate(0px, -2px);
+					top: -2px;
 				}
 			}
 		}

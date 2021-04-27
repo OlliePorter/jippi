@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import styles from './callToAction.module.scss'
 
 const CallToAction = () => {
@@ -11,7 +12,7 @@ const CallToAction = () => {
 				<div className={styles.innerContainerOne}>
 					<p className={styles.title}>Sign up to Jippi today</p>
 					<p className={styles.subtitle}>Join a global community of adoptees each on their own path to a more authentic self.</p>
-					<button>Join Now</button>
+					<NavLink exact to="/sign_up" className={styles.signUpButton}>Join Now</NavLink>
 				</div>
     	</div>
 		</div>
