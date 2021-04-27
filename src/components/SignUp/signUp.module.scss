@@ -6,13 +6,14 @@
 
   .image {
     height: 395px;
+    transform: rotate(-193deg);
     position: absolute;
     z-index: 0;
 
     @media (max-width: 768px) {
-      transform: rotate(187deg);
-      height: 470px;
-      width: 323px;
+      transform: rotate(185deg);
+      height: 515px;
+      width: 325px;
     }
   }
 
