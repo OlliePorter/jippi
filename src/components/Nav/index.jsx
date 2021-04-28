@@ -43,7 +43,7 @@ const Nav = () => {
 				onUnpin={() => setIsHidden(true)}
 			>
 				<ul className={navClassNames()}>
-					<img src="/jippi_blue.png"className={styles.jippiLogo} alt="Jippi logo"/>
+					<NavLink exact to="/" onClick={() => setActiveLink('home')}><div className={styles.jippiLogo}/></NavLink>
 					<div className={styles.innerNavContainer}>
 						<li><NavLink exact to="/" className={linkClassNames('home')} onClick={() => setActiveLink('home')}>Home</NavLink></li>
 						<li><NavLink exact to="/about_us" className={linkClassNames('about')} onClick={() => setActiveLink('about')}>About Us</NavLink></li>
