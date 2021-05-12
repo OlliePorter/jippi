@@ -12,7 +12,7 @@ const Headline = () => {
 				<div className={styles.innerContainerOne}>
 					<img src="/jippi_blue_square.png" alt="jippi logo" className={styles.logo}></img>
 					<p className={styles.title}>Find your tribe</p>
-					<p className={styles.subtitle}>An online adoption community for building relationships and alleviating loneliness.</p>
+					<p className={styles.subtitle}>An online community for adopted people to build relationships and alleviate loneliness.</p>
 					<NavLink exact to="/sign_up" className={styles.signUpButton}>Sign Up</NavLink>
 				</div>
     	</div>
