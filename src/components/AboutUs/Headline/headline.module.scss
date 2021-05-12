@@ -20,6 +20,12 @@
 			margin-right: 60px;
 			padding-left: 80px;
 
+			@media (max-width: 768px) {
+				text-align: center;
+				margin-right: 0;
+				padding-left: 0;
+			}
+
 			.logo {
 				background: white;
 				box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
