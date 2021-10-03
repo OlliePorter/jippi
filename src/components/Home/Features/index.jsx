@@ -16,13 +16,13 @@ const Features = () => {
 				<img src="/campfire.png" alt="camp fire" className={styles.image}></img>
 				<div className={styles.text}>
 					<p className={styles.title}>Weekly tribe check-ins</p>
-					<p className={styles.subtitle}>Tribes are a way to organise online gatherings around a ‘camp-fire’ and provides a structured forum through which tribe members can share stories, give advice or offer emotional support.</p>
+					<p className={styles.subtitle}>Tribes are a way to organise online gatherings around a ‘camp-fire’ and provide a structured forum through which tribe members can share stories, give advice or offer emotional support.</p>
 				</div>
 			</div>
 			<div className={containerClassNames()}>
 				<div className={styles.text}>
 					<p className={styles.title}>Build close relationships</p>
-					<p className={styles.subtitle}>For more of a personal touch, members are paired off with a deck of topics to prompt discussions and develop intimacy in particular areas. Topics like vulnerability, compassion, grief, shame, gratitude, loss, forgiveness and many more.</p>
+					<p className={styles.subtitle}>Each tribe has a Jippi moderator who helps to prompt group discussions in particular areas. Topics like vulnerability, compassion, grief, shame, gratitude, loss and many more.</p>
 				</div>
 				<img src="/online.png" alt="video call" className={styles.imageAlt}></img>
 			</div>
