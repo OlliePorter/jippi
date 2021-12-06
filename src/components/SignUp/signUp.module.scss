@@ -1,21 +1,9 @@
 .container {
-  margin: 180px 80px 80px 80px;
+  height: 100vh;
+  background-color: #f1fcfb;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  .image {
-    height: 395px;
-    transform: rotate(-193deg);
-    position: absolute;
-    z-index: 0;
-
-    @media (max-width: 768px) {
-      transform: rotate(185deg);
-      height: 515px;
-      width: 325px;
-    }
-  }
 
   .box {
     z-index: 1;
@@ -24,7 +12,8 @@
     padding: 30px 40px;
     width: fit-content;
     align-items: center;
-  	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     text-align: center;
 
     p {
@@ -33,14 +22,15 @@
       font-size: 24px;
       line-height: 30px;
       font-weight: bold;
-      font-family: 'Varela', sans-serif;
+      font-family: "San Francisco";
     }
-    
+
     .form {
       display: flex;
       flex-direction: column;
       text-align: center;
       align-items: center;
+      font-family: "San Francisco";
 
       input {
         padding: 10px 30px;
@@ -52,11 +42,10 @@
         width: 150px;
         font-size: 16px;
         border-radius: 12px;
-        font-family: 'Varela', sans-serif;
-    
+
         &:focus {
           outline: none;
-          border: 1px solid #13b6b8;;
+          border: 1px solid #13b6b8;
         }
       }
 
@@ -65,7 +54,7 @@
         margin-bottom: 0;
         font-size: 16px;
       }
-  
+
       button {
         background-color: #13b6b8;
         color: white;
@@ -78,17 +67,16 @@
         font-weight: bold;
         text-align: center;
         border: none;
-        font-family: 'Varela', sans-serif;
         cursor: pointer;
         min-width: 200px;
         transition: transform 200ms ease;
         margin-top: 20px;
-    
+
         @media (max-width: 768px) {
           width: 100%;
           margin-bottom: 10px;
         }
-    
+
         &:hover {
           transform: translate(0px, -2px);
         }

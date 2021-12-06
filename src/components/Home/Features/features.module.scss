@@ -1,69 +1,67 @@
 .container {
-	text-align: center;
-	font-family: 'Varela', sans-serif;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	align-items: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
+  text-align: center;
+  font-family: "San Francisco";
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
 
-	@media (max-width: 768px) {
-		margin-left: 40px;
+  @media (max-width: 768px) {
+    margin-left: 40px;
     margin-right: 40px;
-		flex-direction: column;
+    flex-direction: column;
 
-		&.containerSwap {
-			flex-direction: column-reverse;
-		}
-	}
+    &.containerSwap {
+      flex-direction: column-reverse;
+    }
+  }
 
-	.image {
-		width: 460px;
+  .image {
+    width: 460px;
 
-		@media (max-width: 768px) {
-			width: 300px;
-		}
-	}
+    @media (max-width: 768px) {
+      width: 300px;
+    }
+  }
 
-	.imageAlt {
-		width: 400px;
-	}
+  .imageAlt {
+    width: 400px;
+  }
 
-	.imageAltTwo {
-		width: 500px;
+  .imageAltTwo {
+    width: 500px;
 
-		@media (max-width: 768px) {
-			width: 400px;
-		}
-	}
+    @media (max-width: 768px) {
+      width: 400px;
+    }
+  }
 
-	.text {
-		width: 530px;
+  .text {
+    width: 700px;
     margin-top: 20px;
     text-align: left;
     margin-left: 80px;
 
-		@media (max-width: 768px) {
-			width: auto;
-			margin-left: 0;
-			text-align: center;
-			margin-bottom: 24px;
-		}
+    @media (max-width: 768px) {
+      width: auto;
+      margin-left: 0;
+      text-align: center;
+      margin-bottom: 24px;
+    }
 
-		.title {
-			margin-bottom: 10px;
-			font-size: 24px;
-			line-height: 30px;
-			font-weight: bold;
-		}
+    .title {
+      margin-bottom: 10px;
+      font-size: 48px;
+      font-weight: bold;
+    }
 
-		.subtitle {
-			margin-bottom: 0em;
-			color: #3d5066;
-			font-size: 16px;
-			line-height: 28px;
-			font-weight: 300;
-		}
-	}	
+    .subtitle {
+      margin-bottom: 0em;
+      color: #696969;
+      font-size: 24px;
+      font-weight: 300;
+    }
+  }
 }

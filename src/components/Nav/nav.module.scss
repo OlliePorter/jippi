@@ -1,87 +1,91 @@
 .outerNavContainer {
-	margin: 0;
-	position: fixed;
-	background-color: white;
-	z-index: 100;
-	top: 0;
-	left: 0;
-	right: 0;
-	border-bottom-width: 0;
-	height: 80px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-	transition:top .3s;
+  margin: 0;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom-width: 0;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  transition: top 0.3s;
 
-	@media (max-width: 768px) {
-		padding: 0;
-	}
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 
-	&.hide {
-		top: -100px;
-	}
+  &.hide {
+    top: -100px;
+  }
 
-	.jippiLogo {
-		height: 60px;
-		background-image: url(../../images/jippi_blue.png);
-		background-repeat: round;
-		width: 100px;
-	}
+  .jippiLogo {
+    height: 60px;
+    background-image: url(../../images/jippi_blue.png);
+    background-repeat: round;
+    width: 100px;
+  }
 
-	.innerNavContainer {
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
-		flex-direction: row;
-		list-style-type: none;
-		width: 400px;
+  .innerNavContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    width: 400px;
 
-		.jippiText {
-			color: #3d5066;
-			text-decoration: none;
-			font-weight: 300;
-			font-family: 'Varela', sans-serif;
+    .jippiText {
+      color: #3d5066;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: "San Francisco";
 
-			&.selected {
-				border-bottom:1px solid #3d5066;
-				padding-bottom:2px;
-			}
-		}
-		
-		.jippiText:hover {
-			border-bottom: 1px solid #3d5066;
-			padding-bottom: 2px;
-			transition: all 0.2s linear;
-			-webkit-transition: all 0.2s linear;
-		}
-		
-		.navButton {
-			cursor: pointer;
-			height: 48px;
-			width: 112px;
-			background-color: #3d5066;
-    	color: white;
-			border-radius: 50px;
-			text-decoration: none;
-			outline: none;
-			border: none;
-			font-weight: bold;
-			font-family: 'Varela', sans-serif;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			transition: transform 200ms ease;
-			font-size: 14px;
+      &.selected {
+        border-bottom: 2px solid #3d5066;
+        padding-bottom: 2px;
+        border-bottom-left-radius: 5px 2px;
+        border-bottom-right-radius: 5px 2px;
+      }
+    }
 
+    .jippiText:hover {
+      border-bottom: 2px solid #3d5066;
+      border-bottom-left-radius: 5px 2px;
+      border-bottom-right-radius: 5px 2px;
+      padding-bottom: 2px;
+      transition: all 0.2s linear;
+      -webkit-transition: all 0.2s linear;
+    }
 
-			@media (max-width: 768px) {
-				width: 88px;
-			}
+    .navButton {
+      cursor: pointer;
+      height: 48px;
+      width: 112px;
+      background-color: #3d5066;
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      outline: none;
+      border: none;
+      font-weight: bold;
+      font-family: "San Francisco";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 200ms ease;
+      font-size: 14px;
 
-			&:hover {
-				transform: translate(0px, -2px);
-			}
-		}
-	}
+      @media (max-width: 768px) {
+        width: 88px;
+      }
+
+      &:hover {
+        transform: translate(0px, -2px);
+      }
+    }
+  }
 }

@@ -1,5 +1,5 @@
 import { hot } from 'react-hot-loader/root';
-import React  from 'react';
+import React, { useState } from "react";
 import {Switch, Route, HashRouter} from 'react-router-dom'
 
 import Nav from './components/Nav';
@@ -10,13 +10,15 @@ import AboutUs from './components/AboutUs';
 import './App.scss';
 
 const App = () => {
+  const [isHidden, setIsHidden] = useState(false);  
+
   return (
     <>
-      <Nav />
+      <Nav isHidden={isHidden} setIsHidden={setIsHidden} />
       <HashRouter>
         <Switch>
           <Route exact path='/'>
-            <Home />
+            <Home setIsHidden={setIsHidden} />
           </Route> 
           <Route exact path='/about_us'>
             <AboutUs />

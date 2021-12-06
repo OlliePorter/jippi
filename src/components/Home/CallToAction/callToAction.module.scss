@@ -1,85 +1,85 @@
 .cover {
-	padding-bottom: 60px;
-	background-color: white;
-	font-family: 'Varela', sans-serif;
+  padding-bottom: 60px;
+  background-color: white;
+  font-family: "San Francisco";
 
-	.innerCover {
-		margin-top: 60px;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
+  .innerCover {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
-		@media (max-width: 768px) {
-			flex-direction: column;
-		}
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
 
-		.innerContainerOne {
-			max-width: 400px;
-			margin-right: 60px;
-			padding-left: 80px;
-			text-align: center;
+    .innerContainerOne {
+      max-width: 400px;
+      margin-right: 60px;
+      padding-left: 80px;
+      text-align: center;
 
-			@media (max-width: 768px) {
-				margin-right: 40px;
-				padding-left: 40px;
-			}
+      @media (max-width: 768px) {
+        margin-right: 40px;
+        padding-left: 40px;
+      }
 
-			.title {
-				font-weight: bold;
-				color: #1d2630;
-				font-size: 36px;
-				margin-top: 20px;
-				margin-bottom: 20px;
+      .title {
+        font-weight: bold;
+        color: #1d2630;
+        font-size: 48px;
+        margin-top: 20px;
+        margin-bottom: 20px;
 
-				@media (max-width: 768px) {
-					font-size: 30px;
-				}
-			}
-		
-			.subtitle {
-				color: #3d5066;
-				font-size: 18px;
-				margin-top: 0;
-				margin-bottom: 40px;
+        @media (max-width: 768px) {
+          font-size: 30px;
+        }
+      }
 
-				@media (max-width: 768px) {
-					font-size: 16px;
-				}
-			}
+      .subtitle {
+        color: #3d5066;
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 40px;
 
-			.signUpButton {
-				position: relative;
-				background-color: #13b6b8;
-				color: white;
-				width: 150px;
-				min-width: 100px;
-				padding: 16px 70px;
-				border-radius: 50px;
-				font-size: 16px;
-				line-height: 30px;
-				text-decoration: none;
-				font-weight: bold;
-				text-align: center;
-				border: none;
-				font-family: 'Varela', sans-serif;
-				cursor: pointer;
-				min-width: 200px;
-				transition: top ease 200ms;
-				top: 0;
+        @media (max-width: 768px) {
+          font-size: 16px;
+        }
+      }
 
-				&:hover {
-					top: -2px;
-				}
-			}
-		}
+      .signUpButton {
+        position: relative;
+        background-color: #13b6b8;
+        color: white;
+        width: 150px;
+        min-width: 100px;
+        padding: 16px 70px;
+        border-radius: 50px;
+        font-size: 16px;
+        line-height: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        border: none;
+        font-family: "San Francisco";
+        cursor: pointer;
+        min-width: 200px;
+        transition: top ease 200ms;
+        top: 0;
 
-		.image {
-			height: 400px;
+        &:hover {
+          top: -2px;
+        }
+      }
+    }
 
-			@media (max-width: 768px) {
-    		height: 300px;
-			}
-		}
-	}
+    .image {
+      height: 400px;
+
+      @media (max-width: 768px) {
+        height: 300px;
+      }
+    }
+  }
 }
