@@ -7,7 +7,7 @@ const CallToAction = ({ setIsHidden }) => {
     <div className={styles.cover}>
       <div className={styles.innerCover}>
         <div>
-          <img src="/mockup.png" alt="iphone" className={styles.image}></img>
+          <img src="/iphone2.png" alt="iphone" className={styles.image}></img>
         </div>
         <div className={styles.innerContainerOne}>
           <p className={styles.title}>Join for free</p>
