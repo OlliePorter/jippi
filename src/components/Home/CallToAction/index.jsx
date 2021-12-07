@@ -10,7 +10,7 @@ const CallToAction = ({ setIsHidden }) => {
           <img src="/mockup.png" alt="iphone" className={styles.image}></img>
         </div>
         <div className={styles.innerContainerOne}>
-          <p className={styles.title}>Explore for free</p>
+          <p className={styles.title}>Join for free</p>
           <p className={styles.subtitle}>
             Jippi helps adopted people to find their authentic selves. Best of
             all, it won't break the bank like therapy.
@@ -21,7 +21,7 @@ const CallToAction = ({ setIsHidden }) => {
             className={styles.signUpButton}
             onClick={() => setIsHidden(false)}
           >
-            Join Now
+            Sign Up
           </NavLink>
         </div>
       </div>

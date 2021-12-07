@@ -5,13 +5,13 @@
   padding-left: 20px;
 
   @media (max-width: 768px) {
-    margin-bottom: 40px;
+    margin: 20px;
     padding-left: 0px;
   }
 
   .speechSquare {
     background: #3d5066;
-    width: 400px;
+    max-width: 400px;
     min-height: 140px;
     border-radius: 15px;
     display: flex;
@@ -28,7 +28,7 @@
   }
 
   .speechCircle {
-    color: #696969;
+    background-color: #3d5066;
     width: 30px;
     height: 30px;
     border-radius: 100%;
