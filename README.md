@@ -4,7 +4,7 @@ Jippi is a simple informational website which uses stateless React components to
 
 Jippi was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<img width="1280" alt="Screenshot 2021-05-31 at 14 03 49" src="https://user-images.githubusercontent.com/13727615/120198146-b87b6e80-c219-11eb-97d5-780d98f2ea0e.png">
+<img width="1280" alt="Screenshot 2021-12-23 at 09 37 48" src="https://user-images.githubusercontent.com/13727615/147220864-dcc2c005-d877-4833-a9c1-4cd9e58b1c1d.png">
 
 ## Demo
 
