@@ -1,8 +1,8 @@
 @font-face {
-  font-family: "San Francisco";
+  font-family: "Nunito";
   font-weight: 400;
-  src: local("San Francisco"),
-  url("./fonts/FontsFree-Net-SF-Pro-Rounded-Regular.ttf") format("truetype");
+  src: local("Nunito"),
+  url("./fonts/Nunito-VariableFont_wght.ttf") format("truetype");
 }
 
 body {
