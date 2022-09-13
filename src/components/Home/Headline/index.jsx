@@ -19,10 +19,9 @@ const Headline = ({ setIsHidden }) => {
             alt="jippi logo"
             className={styles.logo}
           ></img>
-          <p className={styles.title}>Find Your Tribe</p>
+          <p className={styles.title}>Meet Jippi</p>
           <p className={styles.subtitle}>
-            A social connection and emotional support app for the adoptee
-            community.
+            A wellness app for adoptees to find community and learn valuable skills to help them thrive in life.
           </p>
           <NavLink
             exact

@@ -15,7 +15,7 @@ const Features = () => {
       <div className={styles.container}>
         <img src="/campfire.png" alt="camp fire" className={styles.image}></img>
         <div className={styles.text}>
-          <p className={styles.title}>1. Weekly Tribe check-ins</p>
+          <p className={styles.title}>1. Weekly Tribe gatherings</p>
           <p className={styles.subtitle}>
             Tribes are a way to organise online gatherings around a ‘camp-fire’
             and provide a structured forum through which Tribe members can share
