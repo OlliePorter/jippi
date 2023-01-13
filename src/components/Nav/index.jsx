@@ -10,7 +10,7 @@ const Nav = ({ isHidden, setIsHidden }) => {
   const homeOrActiveTab = isActiveLinkInStorage
     ? isActiveLinkInStorage
     : "home";
-  const [isActive, setIsActive] = useState(homeOrActiveTab);
+  const [, setIsActive] = useState(homeOrActiveTab);
 
   const setActiveLink = (linkName) => {
     localStorage.setItem("activeLink", linkName);
@@ -18,19 +18,9 @@ const Nav = ({ isHidden, setIsHidden }) => {
     setIsActive(linkName);
   };
 
-  const isActiveLink = (linkName) => {
-    return linkName === isActive;
-  };
-
   const navClassNames = () => {
     return classNames(styles.outerNavContainer, {
       [styles.hide]: isHidden,
-    });
-  };
-
-  const linkClassNames = (name) => {
-    return classNames(styles.jippiText, {
-      [styles.selected]: isActiveLink(name),
     });
   };
 
@@ -44,28 +34,7 @@ const Nav = ({ isHidden, setIsHidden }) => {
           <NavLink exact to="/" onClick={() => setActiveLink("home")}>
             <div className={styles.jippiLogo} />
           </NavLink>
-          <div className={styles.innerNavContainer}>
-            <li>
-              <NavLink
-                exact
-                to="/"
-                className={linkClassNames("home")}
-                onClick={() => setActiveLink("home")}
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                exact
-                to="/about_us"
-                className={linkClassNames("about")}
-                onClick={() => setActiveLink("about")}
-              >
-                About Us
-              </NavLink>
-            </li>
-            <li>
+          <li>
               <NavLink
                 exact
                 to="/sign_up"
@@ -75,7 +44,6 @@ const Nav = ({ isHidden, setIsHidden }) => {
                 Sign Up
               </NavLink>
             </li>
-          </div>
         </ul>
       </Headroom>
     </HashRouter>
