@@ -2,13 +2,13 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./headline.module.scss";
 
-const Headline = ({ setIsHidden }) => {
+const Headline = ({ setIsHidden, imageSrc, subtitle }) => {
   return (
     <div className={styles.cover}>
       <div className={styles.innerCover}>
         <div>
           <img
-            src="/conversation.png"
+            src={imageSrc}
             alt="conversation"
             className={styles.image}
           ></img>
@@ -21,7 +21,7 @@ const Headline = ({ setIsHidden }) => {
           ></img>
           <p className={styles.title}>Meet Jippi</p>
           <p className={styles.subtitle}>
-            A wellness app for adoptees to find community and learn valuable skills to help them thrive in life.
+            {subtitle}
           </p>
           <NavLink
             exact

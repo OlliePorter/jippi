@@ -3,7 +3,7 @@ import Mailchimp from "react-mailchimp-form";
 
 import styles from "./signUp.module.scss";
 
-const SignUp = () => {
+const SignUp = ({subdomain}) => {
   return (
     <div className={styles.container}>
       <div className={styles.box}>

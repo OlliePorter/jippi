@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./callToAction.module.scss";
 
-const CallToAction = ({ setIsHidden }) => {
+const CallToAction = ({ setIsHidden, title, subtitle }) => {
   return (
     <div className={styles.cover}>
       <div className={styles.innerCover}>
@@ -10,10 +10,9 @@ const CallToAction = ({ setIsHidden }) => {
           <img src="/iphone2.png" alt="iphone" className={styles.image}></img>
         </div>
         <div className={styles.innerContainerOne}>
-          <p className={styles.title}>Join for free</p>
+          <p className={styles.title}>{title}</p>
           <p className={styles.subtitle}>
-            Jippi helps adopted people to find their authentic selves. Best of
-            all, it won't break the bank like therapy.
+            {subtitle}
           </p>
           <NavLink
             exact

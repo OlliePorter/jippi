@@ -23,7 +23,7 @@ const Footer = () => {
           <div className={styles.footerCol}>
             <h4>Support</h4>
             <ul>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="mailto:hello@jippi.app">Email</a></li>
             </ul>
           </div>
           <div className={styles.footerCol}>

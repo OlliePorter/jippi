@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './summary.module.scss'
 
-const Summary = () => {
+const Summary = ({imageSrc, title, subtitle}) => {
   return (
 		<div className={styles.container}>
-			<img src="/people.png" alt="people" className={styles.image}></img>
+			<img src={imageSrc} alt="people" className={styles.image}></img>
 			<div className={styles.text}>
-				<p className={styles.title}>Made for adoptees, by adoptees</p>
-				<p className={styles.subtitle}>Our app helps adopted people everywhere to form meaningful connections and provides each individual with the skills necessary to live a more fulfilling life.</p>
+				<p className={styles.title}>{title}</p>
+				<p className={styles.subtitle}>{subtitle}</p>
 			</div>
 		</div>
   );
