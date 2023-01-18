@@ -9,7 +9,7 @@ import Footer from "./Footer";
 const Home = ({ setIsHidden, subdomain }) => {
 
   return subdomain ? <>
-    <Headline setIsHidden={setIsHidden} imageSrc="/btc_convo.png" subtitle="Jippi is the easiest, most interactive way to learn about Bitcoin. Become crypto literate with our beginner friendly online learning app." />
+    <Headline setIsHidden={setIsHidden} imageSrc="/btc_convo.png" subtitle="Jippi is the easiest, most interactive way to learn about Bitcoin. Become crypto literate with our beginner friendly social learning app." />
     <Summary 
       imageSrc="/bitcoin_two.png"
       title="Hard money the easy way" 
