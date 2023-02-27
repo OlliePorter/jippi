@@ -2,13 +2,14 @@
 
 Jippi is a simple informational website which uses stateless React components to render each page. These integrate with the Mailchimp API in order to link sign up forms for caputuring prospective user information. The Jippi MVP is designed to confirm the value proposition for a side project idea prior to further development.
 
-Jippi was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+----------
 
-<img width="1280" alt="Screenshot 2021-12-23 at 09 37 48" src="https://user-images.githubusercontent.com/13727615/147220864-dcc2c005-d877-4833-a9c1-4cd9e58b1c1d.png">
+<img width="1512" alt="Screen Shot 2023-02-26 at 10 59 17 PM" src="https://user-images.githubusercontent.com/13727615/221478173-348b1592-89b7-412d-a746-cc4e9470be4a.png">
 
-## Demo
 
-You can find the live project on Heroku - [jippi.herokuapp.com](https://jippi.herokuapp.com/).
+## Deployment link
+
+You can find the live project on Heroku - [jippi.app](https://www.jippi.app/).
 
 ## Available Scripts
 
