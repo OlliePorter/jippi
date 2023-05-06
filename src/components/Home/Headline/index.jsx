@@ -6,16 +6,16 @@ const Headline = ({ setIsHidden, imageSrc, subtitle }) => {
   return (
     <div className={styles.cover}>
       <div className={styles.innerCover}>
-        <div>
+        {/* <div>
           <img
             src={imageSrc}
             alt="conversation"
             className={styles.image}
           ></img>
-        </div>
+        </div> */}
         <div className={styles.innerContainerOne}>
           <img
-            src="/jippi_blue_square.png"
+            src="/jippi_tan.png"
             alt="jippi logo"
             className={styles.logo}
           ></img>
@@ -23,14 +23,14 @@ const Headline = ({ setIsHidden, imageSrc, subtitle }) => {
           <p className={styles.subtitle}>
             {subtitle}
           </p>
-          <NavLink
+          {/* <NavLink
             exact
             to="/sign_up"
             className={styles.signUpButton}
             onClick={() => setIsHidden(false)}
           >
             Sign Up
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
       <div className={styles.innerContainerTwo}>
@@ -42,7 +42,7 @@ const Headline = ({ setIsHidden, imageSrc, subtitle }) => {
             height="18px"
             viewBox="0 0 25 25"
             fill="none"
-            stroke="#13b6b8"
+            stroke="#343434"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"

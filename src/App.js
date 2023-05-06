@@ -13,7 +13,7 @@ const App = () => {
   
   return (
     <>
-      <Nav isHidden={isHidden} setIsHidden={setIsHidden} />
+      {/* <Nav isHidden={isHidden} setIsHidden={setIsHidden} /> */}
       <HashRouter>
         <Switch>
           <Route exact path='/'>
