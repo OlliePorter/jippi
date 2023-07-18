@@ -1,8 +1,17 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import styles from "./headline.module.scss";
+import classNames from "classnames";
 
-const Headline = ({ setIsHidden, imageSrc, subtitle }) => {
+const Headline = ({ inView, imageSrc, subtitle }) => {
+
+  const navClassNames = () => {
+    return classNames(styles.logo, {
+      [styles.hidden]: !!inView,
+      [styles.show]: inView,
+    });
+  };
+  
   return (
     <div className={styles.cover}>
       <div className={styles.innerCover}>
@@ -17,7 +26,7 @@ const Headline = ({ setIsHidden, imageSrc, subtitle }) => {
           <img
             src="/jippi_tan.png"
             alt="jippi logo"
-            className={styles.logo}
+            className={navClassNames()}
           ></img>
           <p className={styles.title}>Meet Jippi</p>
           <p className={styles.subtitle}>

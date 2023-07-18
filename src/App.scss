@@ -1,3 +1,30 @@
 #root {
   overflow-x: hidden;
 }
+
+html {
+  overflow: hidden;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hidden {
+    transition: all 2s;
+  }
+
+  .show {
+    transition: all 2s;
+  }
+}
