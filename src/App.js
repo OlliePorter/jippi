@@ -5,9 +5,11 @@ import { Switch, Route, HashRouter } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import SignUp from "./components/SignUp";
+import Summary from "./components/Home/Summary"
 import Headline from "./components/Home/Headline"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { useInView, InView } from "react-intersection-observer";
+import classNames from "classnames";
 
 import "./App.scss";
 
@@ -57,7 +59,7 @@ const App = () => {
             alignItems: "center",
             justifyContent: "center",
             backgroundImage:
-              "linear-gradient(90deg, rgba(41, 143, 126, 0.85) 0%, rgba(62, 105, 168, 0.85) 32%, rgba(225, 73, 125, 0.85) 63%, rgba(248, 158, 70, 0.85) 100%)",
+              "linear-gradient(90deg, rgba(19, 182, 184, 1) 0%, rgba(73, 208, 190, 1) 100%)",
           }}
         >
           <InView onChange={setInView}>
@@ -65,29 +67,32 @@ const App = () => {
               Element is inside the viewport: {inView.toString()}
             </p> */}
             <Headline
-              inView={inView2}
+              inView={inView}
               // setIsHidden={setIsHidden}
-              imageSrc="/btc_convo.png"
-              subtitle="The easiest, most enjoyable way to buy Bitcoin."
+              imageSrc="/floating_person.png"
+              subtitle="The easiest, most interactive way to earn and learn about Bitcoin."
             />
           </InView>
         </ParallaxLayer>
-        <ParallaxLayer
+        <Summary />
+        {/* <ParallaxLayer
           offset={1}
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             backgroundImage:
-              "linear-gradient(90deg, rgba(41, 143, 126, 0.85) 0%, rgba(62, 105, 168, 0.85) 32%, rgba(225, 73, 125, 0.85) 63%, rgba(248, 158, 70, 0.85) 100%)",
+              "linear-gradient(90deg, rgba(19, 182, 184, 1) 0%, rgba(73, 208, 190, 1) 100%)",
           }}
         >
           <InView onChange={setInView2}>
-            <p className={inView2 === true ? "show" : "hidden"}>
-              Element is inside the viewport: {inView2.toString()}
-            </p>
+            <div className={inView2 === true ? "show" : "hidden"}>
+              <p>
+                Jippi is the easiest, most interactive way to earn and learn about Bitcoin.
+              </p>
+            </div>
           </InView>
-        </ParallaxLayer>
+        </ParallaxLayer> */}
         <ParallaxLayer
           offset={2}
           style={{
