@@ -14,29 +14,54 @@ const Summary = ({ imageSrc, title, subtitle }) => {
   // 	</div>
   // );
   const [inView2, setInView2] = useState(false);
+  const [inView3, setInView3] = useState(false);
 
   return (
-    <ParallaxLayer
-      offset={1}
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundImage:
-          "linear-gradient(90deg, rgba(19, 182, 184, 1) 0%, rgba(73, 208, 190, 1) 100%)",
-      }}
-    >
-      <InView onChange={setInView2}>
-        <div className={inView2 === true ? "show" : "hidden"}>
-					<div className={styles.container}>
-          <p className={styles.text} >
-            Jippi is the easiest, most interactive way to earn and learn about
-            Bitcoin.
-          </p>
-					</div>
-        </div>
-      </InView>
-    </ParallaxLayer>
+    <>
+      <ParallaxLayer
+        offset={1}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundImage:
+            "linear-gradient(90deg, rgba(19, 182, 184, 1) 0%, rgba(73, 208, 190, 1) 100%)",
+        }}
+      >
+        <InView onChange={setInView2}>
+          <div className={inView2 === true ? "show" : "hidden"}>
+            <div className={styles.container}>
+              <p className={styles.text}>
+                Jippi is the easiest, most interactive way to earn and learn
+                about bitcoin.
+              </p>
+            </div>
+          </div>
+        </InView>
+      </ParallaxLayer>
+      <ParallaxLayer
+        offset={2}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundImage:
+            "linear-gradient(90deg, rgba(19, 182, 184, 1) 0%, rgba(73, 208, 190, 1) 100%)",
+        }}
+      >
+        <InView onChange={setInView3}>
+          <div className={inView3 === true ? "show" : "hidden"}>
+            <div className={styles.container}>
+              <p className={styles.text}>
+                Part education platform, part social network — our app is the
+                best place to grow your knowledge and your connections with
+                unbeatable bitcoin rewards.
+              </p>
+            </div>
+          </div>
+        </InView>
+      </ParallaxLayer>
+    </>
   );
 };
 

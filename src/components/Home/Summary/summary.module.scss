@@ -4,6 +4,7 @@
   // align-items: center;
   // justify-content: center;
   text-align: center;
+  flex-direction: column;
 
   .text {
     font-size: 48px;
@@ -12,6 +13,11 @@
     color: #282321;
   }
 }
+
+// .line {
+//   border-left: 6px solid black;
+//   height: 200px;
+// }
 
 // .container {
 //   text-align: center;
