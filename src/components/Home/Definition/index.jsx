@@ -8,7 +8,7 @@ const Definition = () => {
 
   return (
     <ParallaxLayer
-      offset={4}
+      offset={6}
       style={{
         display: "flex",
         alignItems: "center",

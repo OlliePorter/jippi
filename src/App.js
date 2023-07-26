@@ -8,6 +8,8 @@ import Headline from "./components/Home/Headline";
 import Definition from "./components/Home/Definition";
 import BtcBackground from "./components/Home/BtcBackground";
 import DollarChart from "./components/Home/DollarChart";
+import ActualCost from "./components/Home/ActualCost";
+import Footer from "./components/Home/Footer";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { InView } from "react-intersection-observer";
 
@@ -18,8 +20,9 @@ const App = () => {
 
   return (
     <>
+      {/* <Nav isHidden={false} setIsHidden={() => {}} /> */}
       <Parallax
-        pages={6}
+        pages={10}
       >
         <ParallaxLayer
           offset={0}
@@ -43,18 +46,18 @@ const App = () => {
         <DollarChart />
         <Definition />
         <BtcBackground />
+        <ActualCost />
+        <ParallaxLayer
+          offset={9}
+          style={{
+            // width: 80,
+            height: 80,
+            position: "relative"
+          }}
+        >
+        <Footer />
+        </ParallaxLayer>
       </Parallax>
-      {/* <Nav isHidden={isHidden} setIsHidden={setIsHidden} /> */}
-      {/* <HashRouter>
-        <Switch>
-          <Route exact path='/'>
-            <Home setIsHidden={setIsHidden} />
-          </Route> 
-          <Route exact path='/sign_up'>
-            <SignUp  />
-          </Route> 
-        </Switch>
-      </HashRouter> */}
     </>
   );
 };

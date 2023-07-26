@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { ParallaxLayer } from "@react-spring/parallax";
 import { InView } from "react-intersection-observer";
-import styles from "./btcBackground.module.scss";
+import styles from "./actualCost.module.scss";
 
-const BtcBackground = ({ offsetInteger, text }) => {
+const ActualCost = () => {
   const [inView, setInView] = useState(false);
 
   return (
     <ParallaxLayer
-      offset={7}
+      offset={8}
       style={{
         display: "flex",
         alignItems: "center",
@@ -19,7 +19,11 @@ const BtcBackground = ({ offsetInteger, text }) => {
       <InView onChange={setInView}>
         <div className={inView === true ? "show" : "hidden"}>
           <div className={styles.container}>
-            <p className={styles.text}>In Japanese, Jippi means <span className={styles.highlight}>actual cost.</span></p>
+            <p className={styles.text}>
+              The <span className={styles.highlight}>actual cost</span>{" "}
+              of unsound, leaky money is an erosion of purchasing power over
+              time. It becomes impossible to save leaky money in the long term.
+            </p>
           </div>
         </div>
       </InView>
@@ -27,4 +31,4 @@ const BtcBackground = ({ offsetInteger, text }) => {
   );
 };
 
-export default BtcBackground;
+export default ActualCost;

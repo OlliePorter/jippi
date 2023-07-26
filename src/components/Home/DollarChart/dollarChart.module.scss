@@ -1,20 +1,40 @@
-// .container {
-//   // height: 400px;
-//   // width: 400px;
-//   // background-image: linear-gradient(90deg, rgba(19, 182, 184, 1) 0%, rgba(73, 208, 190, 1) 100%);
-//   // border-radius: 50%;
-//   // display: inline-block;
-//   // display: flex;
-//   // flex-direction: column;
-//   // align-items: center;
-//   // justify-content: center;
+.container {
+  // padding: 300px 300px;
+  max-width: 800px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
 
-//   .image {
-//     width: 200px;
-//     height: 200px;
+  .text {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: "Nunito";
+    color: #282321;
+
+    .highlight {
+      display: inline;
+      padding: 2px 8px;
+      background: #2BACAE;
+      color: #282321;
+    }
+  }
+  .image {
+    width: 800px;
+    // height: 200px;
+  }
+}
+
+// .text {
+//   font-size: 48px;
+//   font-weight: bold;
+//   font-family: "Nunito";
+//   color: #282321;
+
+//   .highlight {
+//     display: inline;
+//     white-space: nowrap;
+//     padding: 2px 8px;
+//     background: #2BACAE;
+//     color: #282321;
 //   }
 // }
-.image {
-  width: 800px;
-  // height: 200px;
-}
