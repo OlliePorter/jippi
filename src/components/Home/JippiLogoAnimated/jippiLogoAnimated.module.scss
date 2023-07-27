@@ -1,0 +1,65 @@
+// .logo {
+//   font-size: 300px;
+//   font-weight: 200;
+//   font-family: "JippiFont";
+//   background: linear-gradient(to top, #13B6B8, #49D0BE);
+//   -webkit-text-fill-color: transparent;
+//   -webkit-background-clip: text;
+//   padding: 0 50px
+// }
+
+// .jippiLogo {
+//   height: 60px;
+//   background-image: url(../../../images/jippi_blue.png);
+//   background-repeat: round;
+//   width: 100px;
+// }
+.words {
+  // font-size: 200px;
+  font-weight: 0;
+  font-family: "JippiFont";
+  color: #282321;
+  line-height: 1.5;
+  letter-spacing: 8px;
+}
+
+.words span {
+  font-size: 400px;
+  display: inline-block;
+  animation: move 3s ease-in-out infinite;
+  text-shadow: 0 0 2px rgba(21, 19, 17, 1)
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+  }
+  50% {
+    // text-shadow: 0 25px 50px rgba(255, 255, 255, 0.75);
+    text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+    // text-shadow: 0 25px 50px rgba(21, 19, 17, 1);
+  }
+  100% {
+    transform: translate(30%, 0);
+  }
+}
+
+.words span:nth-child(2) {
+  animation-delay: 0.5s;
+  text-shadow: 0 0 2px rgba(21, 19, 17, 1)
+}
+
+.words span:nth-child(3) {
+  animation-delay: 1s;
+  text-shadow: 0 0 2px rgba(21, 19, 17, 1);
+}
+
+.words span:nth-child(4) {
+  animation-delay: 1.5s;
+  text-shadow: 0 0 2px rgba(21, 19, 17, 1);
+}
+
+.words span:nth-child(5) {
+  animation-delay: 2s;
+  text-shadow: 0 0 2px rgba(21, 19, 17, 1);
+}

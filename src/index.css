@@ -5,6 +5,13 @@
   url("./fonts/Nunito-VariableFont_wght.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "JippiFont";
+  font-weight: 200;
+  src: local("JippiFont"),
+  url("./fonts/jippi_font.ttf") format("truetype");
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;

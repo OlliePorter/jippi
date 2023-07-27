@@ -9,6 +9,8 @@ import Definition from "./components/Home/Definition";
 import BtcBackground from "./components/Home/BtcBackground";
 import DollarChart from "./components/Home/DollarChart";
 import ActualCost from "./components/Home/ActualCost";
+import Introduction from "./components/Home/Introduction";
+import JippiLogoAnimated from "./components/Home/JippiLogoAnimated";
 import Footer from "./components/Home/Footer";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { InView } from "react-intersection-observer";
@@ -22,7 +24,7 @@ const App = () => {
     <>
       {/* <Nav isHidden={false} setIsHidden={() => {}} /> */}
       <Parallax
-        pages={10}
+        pages={11}
       >
         <ParallaxLayer
           offset={0}
@@ -47,16 +49,17 @@ const App = () => {
         <Definition />
         <BtcBackground />
         <ActualCost />
-        <ParallaxLayer
+        <Introduction />
+        <JippiLogoAnimated />
+        {/* <ParallaxLayer
           offset={9}
           style={{
-            // width: 80,
             height: 80,
             position: "relative"
           }}
         >
         <Footer />
-        </ParallaxLayer>
+        </ParallaxLayer> */}
       </Parallax>
     </>
   );

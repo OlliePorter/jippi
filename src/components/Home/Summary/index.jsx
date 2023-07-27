@@ -23,7 +23,7 @@ const Summary = () => {
           <div className={inView === true ? "show" : "hidden"}>
             <div className={styles.container}>
               <p className={styles.text}>
-                Jippi is the easiest way to earn and learn about bitcoin.
+                Jippi is the easiest way to earn and learn about bitcoin with others.
               </p>
             </div>
           </div>
@@ -43,7 +43,9 @@ const Summary = () => {
           <div className={inView2 === true ? "show" : "hidden"}>
             <div className={styles.container}>
               <p className={styles.text}>
-              Part education platform, part social network — Jippi is the only app which pays you in bitcoin for connecting and learning with other bitcoiners.
+                Part education platform, part social network — Jippi is a
+                magical new app which pays you in bitcoin for connecting and
+                learning with other bitcoiners.
               </p>
             </div>
           </div>
