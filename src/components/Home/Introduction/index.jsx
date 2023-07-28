@@ -13,7 +13,7 @@ const Introduction = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "#282321",
+        backgroundColor: "#171717",
       }}
     >
       <InView onChange={setInView}>

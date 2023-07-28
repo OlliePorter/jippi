@@ -13,7 +13,7 @@ const JippiLogoAnimated = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        background: "#282321"
+        background: "#171717"
       }}
       
     >

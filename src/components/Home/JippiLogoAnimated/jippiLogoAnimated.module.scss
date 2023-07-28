@@ -14,10 +14,11 @@
 //   background-repeat: round;
 //   width: 100px;
 // }
+
 .words {
   font-weight: 0;
   font-family: "JippiFont";
-  color: #3c3431;
+  color: #171717;
   line-height: 1.5;
   letter-spacing: 8px;
 }
@@ -30,10 +31,16 @@
 }
 
 @keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+  }
   50% {
     text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+    color: #242424
   }
-
+  100% {
+    transform: translate(30%, 0);
+  }
 }
 
 .words span:nth-child(2) {
