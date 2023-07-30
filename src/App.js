@@ -11,6 +11,7 @@ import DollarChart from "./components/Home/DollarChart";
 import ActualCost from "./components/Home/ActualCost";
 import Introduction from "./components/Home/Introduction";
 import JippiLogoAnimated from "./components/Home/JippiLogoAnimated";
+import EarnLearnConnect from "./components/Home/EarnLearnConnect";
 import Footer from "./components/Home/Footer";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { InView } from "react-intersection-observer";
@@ -23,9 +24,7 @@ const App = () => {
   return (
     <>
       {/* <Nav isHidden={false} setIsHidden={() => {}} /> */}
-      <Parallax
-        pages={11}
-      >
+      <Parallax pages={14}>
         <ParallaxLayer
           offset={0}
           style={{
@@ -51,6 +50,26 @@ const App = () => {
         <ActualCost />
         <Introduction />
         <JippiLogoAnimated />
+        <EarnLearnConnect
+          offsetValue={11}
+          headerText="Earn"
+          text="Stacking sats couldn't be simpler. With Jippi, every time you
+                  complete a Path or attend a Gathering, you're rewarded with
+                  bitcoin. It's that easy."
+          imageUrl="/earn.png"
+        />
+        <EarnLearnConnect
+          offsetValue={12}
+          headerText="Learn"
+          text="Paths are the best way to learn about bitcoin in easily digestible, bite-size learning modules. They're interactive and built with beginners in mind."
+          imageUrl="/learn.png"
+        />
+        <EarnLearnConnect
+          offsetValue={13}
+          headerText="Connect"
+          text="Join a Tribe to connect with other bitcoiners and attend live audio conversations called Gatherings. Anyone can join a Gathering to listen and learn from others on their bitcoin journey."
+          imageUrl="/connect.png"
+        />
         {/* <ParallaxLayer
           offset={9}
           style={{
