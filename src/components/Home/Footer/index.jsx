@@ -28,10 +28,10 @@ const Footer = () => {
           </div>
           <div className={styles.footerCol}>
             <h4>Social</h4>
-            <div className={styles.socialLinks}>
-              <a href="#"><FacebookIcon/></a>
-              <a href="#"><TwitterIcon/></a>
-              <a href="#"><InstagramIcon/></a>
+            <div className={styles.innerContainer}>
+              <a href="https://www.facebook.com/jippiapp"><FacebookIcon/></a>
+              <a href="https://www.x.com/jippiapp"><TwitterIcon/></a>
+              <a href="https://www.instagram.com/jippiapp"><InstagramIcon/></a>
             </div>
           </div>
         </div>

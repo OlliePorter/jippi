@@ -1,5 +1,5 @@
 import { hot } from "react-hot-loader/root";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Switch, Route, HashRouter } from "react-router-dom";
 
 import Nav from "./components/Nav";
@@ -20,11 +20,29 @@ import "./App.scss";
 
 const App = () => {
   const [inView, setInView] = React.useState(false);
+  const [shouldShowNav, setShouldShowNav] = React.useState(false);
+  const parallax = useRef();
+
+  const handleScroll = () => {
+    if (parallax.current && parallax.current.current > 600) {
+      setShouldShowNav(true)
+    } else {
+      setShouldShowNav(false)
+    }
+  };
+
+  useEffect(() => {
+    const container = document.querySelector(".scrolling");
+    container.addEventListener("scroll", handleScroll);
+    return () => {
+      container.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
-      {/* <Nav isHidden={false} setIsHidden={() => {}} /> */}
-      <Parallax pages={14}>
+      <Nav shouldShowNav={shouldShowNav} />
+      <Parallax pages={15} ref={parallax} className="scrolling">
         <ParallaxLayer
           offset={0}
           style={{
@@ -70,15 +88,12 @@ const App = () => {
           text="Join a Tribe to connect with other bitcoiners and attend live audio conversations called Gatherings. Anyone can join a Gathering to listen and learn from others on their bitcoin journey."
           imageUrl="/connect.png"
         />
-        {/* <ParallaxLayer
-          offset={9}
-          style={{
-            height: 80,
-            position: "relative"
-          }}
+        <ParallaxLayer
+          offset={14.6}
+          space={0}
         >
         <Footer />
-        </ParallaxLayer> */}
+        </ParallaxLayer>
       </Parallax>
     </>
   );
