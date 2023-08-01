@@ -3,6 +3,10 @@
   display: flex;
   text-align: center;
   flex-direction: column;
+  
+  @media (max-width: 768px) {
+    padding: 30px;
+  }
 
   .text {
     font-size: 48px;
@@ -19,5 +23,11 @@
   }
   .image {
     width: 800px;
+
+        
+    @media (max-width: 768px) {
+      width: 360px;
+    }
+
   }
 }

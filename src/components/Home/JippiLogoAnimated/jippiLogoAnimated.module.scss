@@ -26,7 +26,11 @@
   font-size: 400px;
   display: inline-block;
   animation: move 3s ease-in-out infinite;
-  text-shadow: 0 0 2px rgba(21, 19, 17, 1), 0 0 2px rgb(21, 19, 17)
+  text-shadow: 0 0 2px rgba(21, 19, 17, 1), 0 0 2px rgb(21, 19, 17);
+
+  @media (max-width: 768px) {
+    font-size: 172px;
+  }
 }
 
 @keyframes move {

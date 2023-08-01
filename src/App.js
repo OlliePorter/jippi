@@ -89,7 +89,7 @@ const App = () => {
           imageUrl="/connect.png"
         />
         <ParallaxLayer
-          offset={14.6}
+          offset={14.62}
           space={0}
         >
         <Footer />

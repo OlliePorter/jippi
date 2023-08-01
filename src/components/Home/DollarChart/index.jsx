@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ParallaxLayer } from "@react-spring/parallax";
 import { InView } from "react-intersection-observer";
 import styles from "./dollarChart.module.scss";
@@ -7,6 +7,16 @@ const DollarChart = () => {
   const [inView, setInView] = useState(false);
   const [inView2, setInView2] = useState(false);
   const [inView3, setInView3] = useState(false);
+
+    const [isMobile, setIsMobile] = useState(
+      window.matchMedia("(max-width: 768px)").matches
+    );
+
+    useEffect(() => {
+      window
+        .matchMedia("(max-width: 768px)")
+        .addEventListener("change", (e) => setIsMobile(e.matches));
+    }, []);
 
   return (
     <>
@@ -23,7 +33,10 @@ const DollarChart = () => {
           <div className={inView === true ? "show" : "hidden"}>
             <div className={styles.container}>
               <p className={styles.text}>
-                Our current monetary system is <span className={styles.highlight}>broken</span>{" "} and continues to <span className={styles.highlight}>leak value</span>{" "} because of inflation.
+                The global monetary system is{" "}
+                <span className={styles.highlight}>broken</span> and continues
+                to <span className={styles.highlight}>leak value</span> because
+                of inflation.
               </p>
             </div>
           </div>
@@ -41,7 +54,7 @@ const DollarChart = () => {
         <InView onChange={setInView3}>
           <div className={inView3 === true ? "show" : "hidden"}>
             <div className={styles.container}>
-            <p className={styles.text}>
+              <p className={styles.text}>
                 The dollar has lost{" "}
                 <span className={styles.highlight}> 90% of its value</span>{" "}
                 since 1950 due to irresponsible money printing.
@@ -63,7 +76,7 @@ const DollarChart = () => {
           <div className={inView2 === true ? "show" : "hidden"}>
             <div className={styles.container}>
               <img
-                src="/line_chart.png"
+                src={isMobile ? "/line_chart_mobile.png" : "/line_chart.png"}
                 alt="Dollar price graph"
                 className={styles.image}
               />

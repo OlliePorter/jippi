@@ -43,9 +43,7 @@ const Summary = () => {
           <div className={inView2 === true ? "show" : "hidden"}>
             <div className={styles.container}>
               <p className={styles.text}>
-                Part education platform, part social network — Jippi is a
-                magical new app which pays you in bitcoin for connecting and
-                learning with other bitcoiners.
+              Our app pays you in bitcoin for connecting and learning with other bitcoiners.
               </p>
             </div>
           </div>
