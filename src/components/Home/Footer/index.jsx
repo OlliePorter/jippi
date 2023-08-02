@@ -1,4 +1,3 @@
-// import classNames from "classnames";
 import React from "react";
 import styles from "./footer.module.scss";
 import FacebookIcon from "@mui/icons-material/Facebook";

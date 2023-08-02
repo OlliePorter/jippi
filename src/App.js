@@ -39,6 +39,16 @@ const App = () => {
     };
   }, []);
 
+  const [isMobile, setIsMobile] = useState(
+    window.matchMedia("(max-width: 768px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 768px)")
+      .addEventListener("change", (e) => setIsMobile(e.matches));
+  }, []);
+
   return (
     <>
       <Nav shouldShowNav={shouldShowNav} />
@@ -62,7 +72,7 @@ const App = () => {
           </InView>
         </ParallaxLayer>
         <Summary />
-        <DollarChart />
+        <DollarChart isMobile={isMobile} />
         <Definition />
         <BtcBackground />
         <ActualCost />
@@ -89,8 +99,7 @@ const App = () => {
           imageUrl="/connect.png"
         />
         <ParallaxLayer
-          offset={14.62}
-          space={0}
+          offset={isMobile ? 14.2 : 14.6}
         >
         <Footer />
         </ParallaxLayer>

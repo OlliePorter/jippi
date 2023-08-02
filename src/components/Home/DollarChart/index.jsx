@@ -1,22 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { ParallaxLayer } from "@react-spring/parallax";
 import { InView } from "react-intersection-observer";
 import styles from "./dollarChart.module.scss";
 
-const DollarChart = () => {
+const DollarChart = ({isMobile}) => {
   const [inView, setInView] = useState(false);
   const [inView2, setInView2] = useState(false);
   const [inView3, setInView3] = useState(false);
-
-    const [isMobile, setIsMobile] = useState(
-      window.matchMedia("(max-width: 768px)").matches
-    );
-
-    useEffect(() => {
-      window
-        .matchMedia("(max-width: 768px)")
-        .addEventListener("change", (e) => setIsMobile(e.matches));
-    }, []);
 
   return (
     <>
