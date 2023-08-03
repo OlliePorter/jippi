@@ -43,7 +43,7 @@ const Summary = () => {
           <div className={inView2 === true ? "show" : "hidden"}>
             <div className={styles.container}>
               <p className={styles.text}>
-              Our app pays you in bitcoin for connecting and learning with other bitcoiners.
+                Recieve bitcoin every time you learn something new or participate in community conversations.
               </p>
             </div>
           </div>
