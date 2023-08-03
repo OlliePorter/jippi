@@ -21,10 +21,6 @@ const Introduction = () => {
             <p className={styles.text}>
               Introducing
             </p>
-            {/* <p className={styles.logo} id="text2">
-              jippi
-            </p> */}
-            {/* <div className={styles.jippiLogo} /> */}
         </div>
       </InView>
     </ParallaxLayer>
