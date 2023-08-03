@@ -1,10 +1,9 @@
 .cover {
-  padding-bottom: 60px;
   background-color: white;
   font-family: "Nunito";
 
   .innerCover {
-    margin-top: 20px;
+    margin-top: 200px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,7 +27,7 @@
       .title {
         font-weight: bold;
         color: #1d2630;
-        font-size: 48px;
+        font-size: 72px;
         margin-top: 20px;
         margin-bottom: 20px;
 
@@ -72,11 +71,23 @@
           top: -2px;
         }
       }
+
+      .innerContainerTwo { 
+        display: flex;
+        flex-direction: 'row';
+
+        .badge {
+          cursor: pointer;
+          width: 140px;
+          margin-right: 12px;
+        }
+      }
     }
 
     .image {
-      height: 650px;
-      padding-top: 100px;
+      height: 480px;
+      border-radius: 500px;
+      box-shadow: 0px 25px 80px 0px rgba(0, 0, 0, 0.15);
 
       @media (max-width: 768px) {
         height: 400px;

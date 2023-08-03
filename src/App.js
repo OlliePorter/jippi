@@ -17,6 +17,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { InView } from "react-intersection-observer";
 
 import "./App.scss";
+import CallToAction from "./components/Home/CallToAction";
 
 const App = () => {
   const [inView, setInView] = React.useState(false);
@@ -25,9 +26,9 @@ const App = () => {
 
   const handleScroll = () => {
     if (parallax.current && parallax.current.current > 600) {
-      setShouldShowNav(true)
+      setShouldShowNav(true);
     } else {
-      setShouldShowNav(false)
+      setShouldShowNav(false);
     }
   };
 
@@ -52,7 +53,7 @@ const App = () => {
   return (
     <>
       <Nav shouldShowNav={shouldShowNav} />
-      <Parallax pages={15} ref={parallax} className="scrolling">
+      <Parallax pages={16} ref={parallax} className="scrolling">
         <ParallaxLayer
           offset={0}
           style={{
@@ -98,11 +99,12 @@ const App = () => {
           text="Join a Tribe to connect with other bitcoiners and attend live audio conversations called Gatherings. Anyone can join a Gathering to listen and learn from others on their bitcoin journey."
           imageUrl="/connect.png"
         />
-        <ParallaxLayer
-          offset={isMobile ? 14.2 : 14.6}
-        >
-        <Footer />
-        </ParallaxLayer>
+        <CallToAction
+          title="Join Jippi"
+          subtitle="Unbeatable rewards await."
+          offsetValue={14}
+        />
+        <Footer offsetValue={15} />
       </Parallax>
     </>
   );
