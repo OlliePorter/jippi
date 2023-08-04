@@ -80,7 +80,10 @@
         .badge {
           cursor: pointer;
           width: 200px;
-          margin-right: 12px;
+
+          &:first-child {
+            margin-right: 12px;
+          }
 
           @media (max-width: 768px) {
             width: 180px;

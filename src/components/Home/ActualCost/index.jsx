@@ -43,9 +43,9 @@ const ActualCost = () => {
           <div className={inView2 === true ? "show" : "hidden"}>
             <div className={styles.container}>
               <p className={styles.text}>
-                In reality, fiat money is a criminal enterprise which
-                redistributes wealth from the poor to the rich through{" "}
-                <span className={styles.highlight}>inflation</span>.
+                In reality, fiat money is a{" "}
+                <span className={styles.highlight}>criminal enterprise</span> which
+                redistributes wealth from the poor to the rich.
               </p>
             </div>
           </div>
