@@ -8,7 +8,7 @@ const Introduction = () => {
 
   return (
     <ParallaxLayer
-      offset={9}
+      offset={11}
       style={{
         display: "flex",
         alignItems: "center",

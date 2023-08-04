@@ -53,7 +53,7 @@ const App = () => {
   return (
     <>
       <Nav shouldShowNav={shouldShowNav} />
-      <Parallax pages={16} ref={parallax} className="scrolling">
+      <Parallax pages={18} ref={parallax} className="scrolling">
         <ParallaxLayer
           offset={0}
           style={{
@@ -80,7 +80,7 @@ const App = () => {
         <Introduction />
         <JippiLogoAnimated />
         <EarnLearnConnect
-          offsetValue={11}
+          offsetValue={13}
           headerText="Earn"
           text="Stacking sats couldn't be simpler. With Jippi, every time you
                   complete a Path or attend a Gathering, you're rewarded with
@@ -88,13 +88,13 @@ const App = () => {
           imageUrl="/earn.png"
         />
         <EarnLearnConnect
-          offsetValue={12}
+          offsetValue={14}
           headerText="Learn"
           text="Paths are the best way to learn about bitcoin in easily digestible, bite-size learning modules. They're interactive and built with beginners in mind."
           imageUrl="/learn.png"
         />
         <EarnLearnConnect
-          offsetValue={13}
+          offsetValue={15}
           headerText="Connect"
           text="Join a Tribe to connect with other bitcoiners and attend live audio conversations called Gatherings. Anyone can join a Gathering to listen and learn from others on their bitcoin journey."
           imageUrl="/connect.png"
@@ -102,9 +102,9 @@ const App = () => {
         <CallToAction
           title="Join Jippi"
           subtitle="Unbeatable rewards await."
-          offsetValue={14}
+          offsetValue={16}
         />
-        <Footer offsetValue={15} />
+        <Footer offsetValue={17} />
       </Parallax>
     </>
   );

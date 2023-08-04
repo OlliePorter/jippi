@@ -8,7 +8,7 @@ const JippiLogoAnimated = () => {
 
   return (
     <ParallaxLayer
-      offset={10}
+      offset={12}
       style={{
         display: "flex",
         alignItems: "center",
@@ -19,10 +19,6 @@ const JippiLogoAnimated = () => {
     >
       <InView onChange={setInView}>
         <div className={inView === true ? "show" : "hidden"}>
-          {/* <p className={styles.logo}>
-              jippi
-            </p> */}
-          {/* <div className={styles.jippiLogo} /> */}
           <div className={styles.words}>
             <span>j</span>
             <span>i</span>

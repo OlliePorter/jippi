@@ -5,29 +5,72 @@ import styles from "./actualCost.module.scss";
 
 const ActualCost = () => {
   const [inView, setInView] = useState(false);
+  const [inView2, setInView2] = useState(false);
+  const [inView3, setInView3] = useState(false);
 
   return (
-    <ParallaxLayer
-      offset={8}
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: "#fffff",
-      }}
-    >
-      <InView onChange={setInView}>
-        <div className={inView === true ? "show" : "hidden"}>
-          <div className={styles.container}>
-            <p className={styles.text}>
-              The <span className={styles.highlight}>actual cost</span>{" "}
-              of unsound, leaky money is an erosion of purchasing power over
-              time. It becomes impossible to save leaky money in the long term.
-            </p>
+    <>
+      <ParallaxLayer
+        offset={8}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: "#fffff",
+        }}
+      >
+        <InView onChange={setInView}>
+          <div className={inView === true ? "show" : "hidden"}>
+            <div className={styles.container}>
+              <p className={styles.text}>
+                The <span className={styles.highlight}>actual cost</span> of
+                debt based money is hidden from the general population.
+              </p>
+            </div>
           </div>
-        </div>
-      </InView>
-    </ParallaxLayer>
+        </InView>
+      </ParallaxLayer>
+      <ParallaxLayer
+        offset={9}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: "#fffff",
+        }}
+      >
+        <InView onChange={setInView2}>
+          <div className={inView2 === true ? "show" : "hidden"}>
+            <div className={styles.container}>
+              <p className={styles.text}>
+                In reality, fiat money is a criminal enterprise which
+                redistributes wealth from the poor to the rich through{" "}
+                <span className={styles.highlight}>inflation</span>.
+              </p>
+            </div>
+          </div>
+        </InView>
+      </ParallaxLayer>
+      <ParallaxLayer
+        offset={10}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: "#fffff",
+        }}
+      >
+        <InView onChange={setInView3}>
+          <div className={inView3 === true ? "show" : "hidden"}>
+            <div className={styles.container}>
+              <p className={styles.text}>
+                Bitcoin fixes this.
+              </p>
+            </div>
+          </div>
+        </InView>
+      </ParallaxLayer>
+    </>
   );
 };
 
