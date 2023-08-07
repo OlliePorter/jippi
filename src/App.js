@@ -23,8 +23,9 @@ const App = () => {
   const [inView, setInView] = React.useState(false);
   const [shouldShowNav, setShouldShowNav] = React.useState(false);
   const parallax = useRef();
+  // const ref = useRef();
 
-  const handleScroll = () => {
+  const handlePageScroll = () => {
     if (parallax.current && parallax.current.current > 600) {
       setShouldShowNav(true);
     } else {
@@ -34,9 +35,9 @@ const App = () => {
 
   useEffect(() => {
     const container = document.querySelector(".scrolling");
-    container.addEventListener("scroll", handleScroll);
+    container.addEventListener("scroll", handlePageScroll);
     return () => {
-      container.removeEventListener("scroll", handleScroll);
+      container.removeEventListener("scroll", handlePageScroll);
     };
   }, []);
 
@@ -52,8 +53,16 @@ const App = () => {
 
   return (
     <>
-      <Nav shouldShowNav={shouldShowNav} />
       <Parallax pages={18} ref={parallax} className="scrolling">
+        <ParallaxLayer
+          style={{ height: "200px" }}
+          sticky={{ start: 0, end: 17 }}
+        >
+          <Nav
+            shouldShowNav={shouldShowNav}
+            innerRef={parallax}
+          />
+        </ParallaxLayer>
         <ParallaxLayer
           offset={0}
           style={{

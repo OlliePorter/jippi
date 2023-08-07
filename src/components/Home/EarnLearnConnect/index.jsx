@@ -7,7 +7,7 @@ const EarnLearnConnect = ({ offsetValue, headerText, text, imageUrl }) => {
   const [inView, setInView] = useState(false);
 
   return (
-    <>
+    <div>
       <ParallaxLayer
         offset={offsetValue}
         style={{
@@ -36,7 +36,7 @@ const EarnLearnConnect = ({ offsetValue, headerText, text, imageUrl }) => {
           </div>
         </InView>
       </ParallaxLayer>
-    </>
+    </div>
   );
 };
 

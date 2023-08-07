@@ -8,7 +8,7 @@ const Summary = () => {
   const [inView2, setInView2] = useState(false);
 
   return (
-    <>
+    <div>
       <ParallaxLayer
         offset={1}
         style={{
@@ -49,7 +49,7 @@ const Summary = () => {
           </div>
         </InView>
       </ParallaxLayer>
-    </>
+    </div>
   );
 };
 

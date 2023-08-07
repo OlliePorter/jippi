@@ -9,7 +9,7 @@ const DollarChart = ({isMobile}) => {
   const [inView3, setInView3] = useState(false);
 
   return (
-    <>
+    <div>
       <ParallaxLayer
         offset={3}
         style={{
@@ -74,7 +74,7 @@ const DollarChart = ({isMobile}) => {
           </div>
         </InView>
       </ParallaxLayer>
-    </>
+    </div>
   );
 };
 

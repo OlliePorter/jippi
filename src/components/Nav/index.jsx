@@ -1,13 +1,18 @@
 import React from "react";
 import classNames from "classnames";
-
 import styles from "./nav.module.scss";
 
-const Nav = ({ shouldShowNav, ref }) => {
+const Nav = ({ shouldShowNav, innerRef }) => {
   const navClassNames = () => {
     return classNames(styles.nav, {
       [styles.navBlue]: shouldShowNav,
     });
+  };
+
+  const handleClick = () => {   
+   if (!innerRef.current) return;
+
+    return innerRef.current?.scrollTo(16);
   };
 
   return (
@@ -15,14 +20,7 @@ const Nav = ({ shouldShowNav, ref }) => {
       <div className={styles.jippiLogo} />
       <button
         className={styles.navButton}
-        onClick={() => {
-          // if (ref.current != null) return null;
-
-          // console.log('ref.current', ref)
-          
-          // ref.current.current.scrollTo(13)
-        }
-        }
+        onClick={handleClick}
       >
         Download
       </button>

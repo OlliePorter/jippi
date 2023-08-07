@@ -9,7 +9,7 @@ const ActualCost = () => {
   const [inView3, setInView3] = useState(false);
 
   return (
-    <>
+    <div>
       <ParallaxLayer
         offset={8}
         style={{
@@ -70,7 +70,7 @@ const ActualCost = () => {
           </div>
         </InView>
       </ParallaxLayer>
-    </>
+    </div>
   );
 };
 

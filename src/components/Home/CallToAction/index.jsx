@@ -7,7 +7,7 @@ const CallToAction = ({ offsetValue, title, subtitle }) => {
   const [inView, setInView] = useState(false);
 
   return (
-    <>
+    <div>
       <ParallaxLayer
         offset={offsetValue}
       >
@@ -43,7 +43,7 @@ const CallToAction = ({ offsetValue, title, subtitle }) => {
           </div>
         </InView>
       </ParallaxLayer>
-    </>
+    </div>
   );
 };
 
