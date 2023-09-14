@@ -33,7 +33,7 @@
     "web-vitals": "^1.0.1"
   },
   "engines": {
-    "node": "18.17.1"
+    "node": "18.x"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
