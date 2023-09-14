@@ -33,10 +33,10 @@
     "web-vitals": "^1.0.1"
   },
   "engines": {
-    "node": "16.18.1"
+    "node": "18.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
