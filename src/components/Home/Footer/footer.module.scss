@@ -1,6 +1,9 @@
 .footer{
-  background: #3d5066;
+  background: #171717;
   padding: 40px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 
   .container{
     max-width: 1170px;
@@ -74,14 +77,14 @@
       background: none;
     }
 
-    .socialLinks {
+    .innerContainer {
       display: flex;
     }
 
-    .socialLinks a{
+    .innerContainer a{
       height: 40px;
       width: 40px;
-      background-color: rgba(255,255,255,0.2);
+      background-color: #171717;
       margin:0 20px 20px 0;
       text-align: center;
       line-height: 40px;
@@ -94,7 +97,7 @@
       align-items: center;
     }
 
-    .socialLinks a:hover{
+    .innerContainer a:hover{
       color: #24262b;
       background-color: #ffffff;
     }

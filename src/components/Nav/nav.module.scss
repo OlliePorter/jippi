@@ -1,44 +1,33 @@
-.outerNavContainer {
-  margin: 0;
+.nav {
+  width: 100%;
   position: fixed;
-  background-color: white;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+  top: -81px;
   z-index: 100;
-  top: 0;
-  left: 0;
-  right: 0;
-  border-bottom-width: 0;
   height: 80px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  transition: top 0.3s;
-  list-style-type: none;
-  padding-right: 40px;
-
-  @media (max-width: 768px) {
-    padding: 0;
-  }
-
-  &.hide {
-    top: -100px;
-  }
+  display: flex;
 
   .jippiLogo {
+    margin-top: 13px;
     height: 60px;
-    background-image: url(../../images/jippi_blue.png);
+    background-image: url(../../images/jippi_black.png);
     background-repeat: round;
-    width: 100px;
+    width: 120px;
+    margin-left: 4%;
   }
 
   .navButton {
     cursor: pointer;
     height: 48px;
     width: 112px;
-    background-color: #3d5066;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #2E2E2E 0%, #171717 100%);
+    box-shadow: 0px 4px 10px 4px rgba(23, 23, 23, 0.30);
     color: white;
-    border-radius: 50px;
+    border-radius: 12px;
     text-decoration: none;
     outline: none;
     border: none;
@@ -49,6 +38,7 @@
     align-items: center;
     transition: transform 200ms ease;
     font-size: 14px;
+    margin-right: 4%;
 
     @media (max-width: 768px) {
       width: 88px;
@@ -58,4 +48,9 @@
       transform: translate(0px, -2px);
     }
   }
+}
+
+.navBlue {
+  position: fixed;
+  top: 0px;
 }

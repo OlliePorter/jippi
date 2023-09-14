@@ -9,7 +9,7 @@ import Footer from "./Footer";
 const Home = ({ setIsHidden }) => {
 
   return <>
-    <Headline setIsHidden={setIsHidden} imageSrc="/btc_convo.png" subtitle="Jippi is the easiest, most interactive way to learn about Bitcoin. Become crypto literate with our beginner friendly social learning app." />
+    <Headline setIsHidden={setIsHidden} imageSrc="/btc_convo.png" subtitle="The easiest, most interactive way to earn and learn about Bitcoin." />
     <Summary 
       imageSrc="/bitcoin_two.png"
       title="Hard money the easy way" 
