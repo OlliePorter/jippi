@@ -1913,6 +1913,11 @@
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
 
+"@sweetalert2/theme-default@^5.0.15":
+  version "5.0.15"
+  resolved "https://registry.yarnpkg.com/@sweetalert2/theme-default/-/theme-default-5.0.15.tgz#bbee1cd37f06c31ddb5ff4a597d58879cfc557e8"
+  integrity sha512-PAHodF/NYwIYpQMhgCrkrqQF3a65RrJJELWuwHuGz/5+3y0gPRU5VfqvbGQnXjk9eIa3W0AZCxyuI+6MByfYLg==
+
 "@testing-library/dom@^7.28.1":
   version "7.31.2"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-7.31.2.tgz#df361db38f5212b88555068ab8119f5d841a8c4a"
@@ -11077,6 +11082,11 @@ svgo@^1.0.0, svgo@^1.2.2:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+sweetalert2@^11.7.27:
+  version "11.7.27"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-11.7.27.tgz#de19294e1b5ae7991de27bb4ae34aff3570aaa0e"
+  integrity sha512-QbRXGQn1sb7HEhzA/K2xtWIwQHh/qkSbb1w6jYcTql2xy17876lTREEt1D4X6Q0x2wHtfUjKJ+Cb8IVkRoq7DQ==
 
 symbol-tree@^3.2.4:
   version "3.2.4"

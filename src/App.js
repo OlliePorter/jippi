@@ -1,7 +1,5 @@
 import { hot } from "react-hot-loader/root";
 import React, { useState, useRef, useEffect } from "react";
-import { Switch, Route, HashRouter } from "react-router-dom";
-
 import Nav from "./components/Nav";
 import Summary from "./components/Home/Summary";
 import Headline from "./components/Home/Headline";
@@ -23,7 +21,6 @@ const App = () => {
   const [inView, setInView] = React.useState(false);
   const [shouldShowNav, setShouldShowNav] = React.useState(false);
   const parallax = useRef();
-  // const ref = useRef();
 
   const handlePageScroll = () => {
     if (parallax.current && parallax.current.current > 600) {
