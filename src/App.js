@@ -74,7 +74,6 @@ const App = () => {
             <Headline
               inView={inView}
               imageSrc="/floating_person.png"
-              subtitle="The easiest, most interactive way to earn and learn about Bitcoin."
             />
           </InView>
         </ParallaxLayer>
@@ -90,24 +89,24 @@ const App = () => {
           headerText="Earn"
           text="Stacking sats couldn't be simpler. With Jippi, every time you
                   complete a Path or attend a Gathering, you're rewarded with
-                  bitcoin. It's that easy."
+                  Bitcoin. It's that easy."
           imageUrl="/earn.png"
         />
         <EarnLearnConnect
           offsetValue={14}
           headerText="Learn"
-          text="Paths are the best way to learn about bitcoin in easily digestible, bite-size learning modules. They're interactive and built with beginners in mind."
+          text="Paths are the best way to learn about Bitcoin in easily digestible, bite-size learning modules. They're interactive and built with beginners in mind."
           imageUrl="/learn.png"
         />
         <EarnLearnConnect
           offsetValue={15}
           headerText="Connect"
-          text="Join a Tribe to connect with other bitcoiners and attend live audio conversations called Gatherings. Anyone can join a Gathering to listen and learn from others on their bitcoin journey."
+          text="Join a Tribe to connect with other Bitcoiners and attend live audio conversations called Gatherings. Anyone can join a Gathering to listen and learn from others on their Bitcoin journey."
           imageUrl="/connect.png"
         />
         <CallToAction
           title="Join Jippi"
-          subtitle="Unbeatable rewards await."
+          subtitle="The ultimate Bitcoin rewards app."
           offsetValue={16}
         />
         <Footer offsetValue={17} />

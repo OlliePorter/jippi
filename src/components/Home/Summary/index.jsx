@@ -23,7 +23,7 @@ const Summary = () => {
           <div className={inView === true ? "show" : "hidden"}>
             <div className={styles.container}>
               <p className={styles.text}>
-                Jippi is the easiest way to earn and learn about bitcoin with others.
+                Jippi is the easiest way to earn and learn about Bitcoin with others.
               </p>
             </div>
           </div>
@@ -43,7 +43,7 @@ const Summary = () => {
           <div className={inView2 === true ? "show" : "hidden"}>
             <div className={styles.container}>
               <p className={styles.text}>
-                Recieve bitcoin every time you learn something new or participate in community conversations.
+                It's the best place to start your Bitcoin education while earning unbeatable rewards.
               </p>
             </div>
           </div>

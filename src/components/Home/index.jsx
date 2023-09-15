@@ -17,7 +17,7 @@ const Home = ({ setIsHidden }) => {
     />
     <Features 
       firstTitle="1. Knowledge in numbers"
-      firstSubtitle="Join a Tribe to connect with other bitcoiners. We use community based learning to encourage collaboration and support on your journey."
+      firstSubtitle="Join a Tribe to connect with other Bitcoiners. We use community based learning to encourage collaboration and support on your journey."
       firstImage="/campfire.png"
       secondTitle="2. Curated learning modules"
       secondSubtitle="Paths are the best way to learn about Bitcoin in easily digestible, bite-size modules. They're interactive and built with beginners in mind."
@@ -26,7 +26,7 @@ const Home = ({ setIsHidden }) => {
       thirdSubtitle="Attend regular online gatherings in the app where you can learn about new topics, ask questions and share your learning progress."
       thirdImage="/online.png"
       />
-    <Testimonials speechTextOne='"I genuinely look forward to checking in with my tribe each week. It’s nice to feel supported and understood by other bitcoiners."' speechTextTwo='"Paths are my favorite part of the app. I have learned so much about bitcoin and I love how simply the information is presented."' speechTextThree='"Before Jippi I was curious about BTC but I never thought I would ever understand it. Now these concepts make way more sense to me."'/>
+    <Testimonials speechTextOne='"I genuinely look forward to checking in with my tribe each week. It’s nice to feel supported and understood by other Bitcoiners."' speechTextTwo='"Paths are my favorite part of the app. I have learned so much about Bitcoin and I love how simply the information is presented."' speechTextThree='"Before Jippi I was curious about BTC but I never thought I would ever understand it. Now these concepts make way more sense to me."'/>
     <CallToAction 
       setIsHidden={setIsHidden}
       title="Your accessible Bitcoin gateway"
