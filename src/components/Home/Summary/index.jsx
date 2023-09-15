@@ -43,7 +43,7 @@ const Summary = () => {
           <div className={inView2 === true ? "show" : "hidden"}>
             <div className={styles.container}>
               <p className={styles.text}>
-                It's the best place to start your Bitcoin education while earning unbeatable rewards.
+                It's the best place to start your Bitcoin journey while earning unbeatable rewards.
               </p>
             </div>
           </div>

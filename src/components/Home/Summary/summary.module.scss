@@ -4,8 +4,29 @@
   text-align: center;
   flex-direction: column;
 
-  @media (max-width: 768px) {
-    padding: 30px;
+  /* Media Query for Mobile Devices */
+  @media (max-width: 480px) {
+    padding: 60px;
+  }
+    
+  /* Media Query for low resolution  Tablets, Ipads */
+  @media (min-width: 481px) and (max-width: 767px) {
+    max-width: 600px;
+  }
+    
+  /* Media Query for Tablets Ipads portrait mode */
+  @media (min-width: 768px) and (max-width: 1024px){
+    max-width: 600px;
+  }
+    
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1025px) and (max-width: 1280px){
+    max-width: 800px;
+  }
+    
+  /* Media Query for Large screens */
+  @media (min-width: 1281px) {
+    max-width: 800px;
   }
 
   .text {
@@ -14,8 +35,29 @@
     font-family: "Nunito";
     color: #282321;
 
-    @media (max-width: 768px) {
-      font-size: 38px;
+    /* Media Query for Mobile Devices */
+    @media (max-width: 480px) {
+      font-size: 32px;
+    }
+      
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 48px;
+    }
+      
+    /* Media Query for Tablets Ipads portrait mode */
+    @media (min-width: 768px) and (max-width: 1024px){
+      font-size: 48px;
+    }
+      
+    /* Media Query for Laptops and Desktops */
+    @media (min-width: 1025px) and (max-width: 1280px){
+      font-size: 48px;
+    }
+      
+    /* Media Query for Large screens */
+    @media (min-width: 1281px) {
+      font-size: 48px;
     }
   }
 }

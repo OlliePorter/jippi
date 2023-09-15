@@ -10,6 +10,7 @@
     justify-content: center;
 
     @media (max-width: 768px) {
+      margin-top: 140px;
       flex-direction: column;
     }
 
@@ -44,7 +45,7 @@
         margin-bottom: 40px;
 
         @media (max-width: 768px) {
-          font-size: 24px;
+          font-size: 22px;
         }
       }
 
@@ -86,7 +87,7 @@
           }
 
           @media (max-width: 768px) {
-            width: 180px;
+            width: 160px;
           }
         }
       }
@@ -98,7 +99,7 @@
       box-shadow: 0px 25px 80px 0px rgba(0, 0, 0, 0.15);
 
       @media (max-width: 768px) {
-        height: 340px;
+        height: 200px;
       }
     }
   }
