@@ -44,6 +44,13 @@ const Footer = ({ offsetValue }) => {
                   <li>
                     <a href="mailto:hello@jippi.app">Email</a>
                   </li>
+                  <li>
+                    <a href="https://medium.com/@jippi_app"
+                      target="_blank"
+                      rel="noreferrer">
+                        Press
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div className={styles.footerCol}>
