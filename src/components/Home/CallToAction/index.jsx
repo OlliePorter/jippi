@@ -81,7 +81,7 @@ const CallToAction = ({ offsetValue, title, subtitle }) => {
                 contentLabel="modal"
               >
                 <div style={customStyles.row}>
-                <h2 style={customStyles.modalTitle}>Sign Up</h2>
+                <h2 style={customStyles.modalTitle}>Join the Waitlist</h2>
                 <span style={customStyles.closeButton} onClick={closeModal}>&times;</span>
                 </div>
                 <div id="hubspotForm"></div>
