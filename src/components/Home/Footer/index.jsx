@@ -1,9 +1,7 @@
 import React from "react";
 import styles from "./footer.module.scss";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import { ParallaxLayer } from "@react-spring/parallax";
+import { ElectricBolt, X } from "@mui/icons-material";
 
 const Footer = ({ offsetValue }) => {
   const date = new Date();
@@ -56,14 +54,12 @@ const Footer = ({ offsetValue }) => {
               <div className={styles.footerCol}>
                 <h4>Social</h4>
                 <div className={styles.innerContainer}>
-                  <a href="https://www.facebook.com/jippiapp">
-                    <FacebookIcon />
+                  <a href="https://twitter.com/JippiApp">
+                    <X />
                   </a>
-                  <a href="https://www.x.com/jippiapp">
-                    <TwitterIcon />
-                  </a>
-                  <a href="https://www.instagram.com/jippiapp">
-                    <InstagramIcon />
+                  <a href="https://stacker.news/Jippi">
+                    <ElectricBolt />
+                    <ElectricBolt className={styles.rotateBolt} />
                   </a>
                 </div>
               </div>

@@ -95,6 +95,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .rotateBolt {
+        transform: scaleX(-1) rotate(116deg);
+        position: relative;
+        left: -6px;
+      }
     }
 
     .innerContainer a:hover{
