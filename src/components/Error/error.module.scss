@@ -1,0 +1,114 @@
+.cover {
+  font-family: "Nunito";
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(90deg, rgba(19, 182, 184, 1) 0%, rgba(73, 208, 190, 1) 100%);
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+
+  .logo {
+    background: #171717;
+    border-radius: 20px;
+    width: 96px;
+    margin-bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    /* Media Query for Mobile Devices */
+    @media (max-width: 480px) {
+      width: 96px;
+    }
+      
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 767px) {
+      width: 140px;
+      border-radius: 32px;
+    }
+      
+    /* Media Query for Tablets Ipads portrait mode */
+    @media (min-width: 768px) and (max-width: 1024px){
+      width: 140px;
+      border-radius: 32px;
+    }
+      
+    /* Media Query for Laptops and Desktops */
+    @media (min-width: 1025px) and (max-width: 1280px){
+      width: 96px;
+    }
+      
+    /* Media Query for Large screens */
+    @media (min-width: 1281px) {
+      width: 96px;
+    }
+  }
+
+  .title {
+    font-weight: bold;
+    color: #171717;
+    font-size: 172px;
+    margin: 0;
+    padding-top: 16px;
+
+    /* Media Query for Mobile Devices */
+    @media (max-width: 480px) {
+      font-size: 90px;
+    }
+      
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 184px;
+    }
+      
+    /* Media Query for Tablets Ipads portrait mode */
+    @media (min-width: 768px) and (max-width: 1024px){
+      font-size: 184px;
+    }
+      
+    /* Media Query for Laptops and Desktops */
+    @media (min-width: 1025px) and (max-width: 1280px){
+      font-size: 172px;
+    }
+      
+    /* Media Query for Large screens */
+    @media (min-width: 1281px) {
+      font-size: 172px;
+    }
+  }
+
+  .paragraph {
+    font-weight: bold;
+    color: #171717;
+    margin: 0;
+    // padding-top: 8px;
+
+    /* Media Query for Mobile Devices */
+      @media (max-width: 480px) {
+      font-size: 50px;
+    }
+      
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 767px) {
+      font-size: 50px;
+    }
+      
+    /* Media Query for Tablets Ipads portrait mode */
+    @media (min-width: 768px) and (max-width: 1024px){
+      font-size: 50px;
+    }
+      
+    /* Media Query for Laptops and Desktops */
+    @media (min-width: 1025px) and (max-width: 1280px){
+      font-size: 50px;
+    }
+      
+    /* Media Query for Large screens */
+    @media (min-width: 1281px) {
+      font-size: 60px;
+    }
+  }
+}

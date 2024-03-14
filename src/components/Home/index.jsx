@@ -1,39 +1,115 @@
-import React from "react";
-import Headline from "./Headline";
+import React, { useState, useRef, useEffect } from "react";
+import Nav from "../Nav";
 import Summary from "./Summary";
-import Features from "./Features";
-import Testimonials from "./Testimonials";
-import CallToAction from "./CallToAction";
+import Headline from "./Headline";
+import Definition from "./Definition";
+import BtcBackground from "./BtcBackground";
+import DollarChart from "./DollarChart";
+import ActualCost from "./ActualCost";
+import Introduction from "./Introduction";
+import EarnLearnConnect from "./EarnLearnConnect";
 import Footer from "./Footer";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { InView } from "react-intersection-observer";
+import CallToAction from "./CallToAction";
+import JippiLogo from "./JippiLogo";
 
-const Home = ({ setIsHidden }) => {
+const Home = () => {
+  const [inView, setInView] = React.useState(false);
+  const [shouldShowNav, setShouldShowNav] = React.useState(false);
+  const parallax = useRef();
 
-  return <>
-    <Headline setIsHidden={setIsHidden} imageSrc="/btc_convo.png" subtitle="The easiest, most interactive way to earn and learn about Bitcoin." />
-    <Summary 
-      imageSrc="/bitcoin_two.png"
-      title="Hard money the easy way" 
-      subtitle="Bitcoin is the biggest revolution since the internet. We believe that everyone deserves a place in this new more equable, cryptographically backed world. Nobody should be left behind because of the lack of accessibility to crypto knowledge." 
-    />
-    <Features 
-      firstTitle="1. Knowledge in numbers"
-      firstSubtitle="Join a Tribe to connect with other Bitcoiners. We use community based learning to encourage collaboration and support on your journey."
-      firstImage="/campfire.png"
-      secondTitle="2. Curated learning modules"
-      secondSubtitle="Paths are the best way to learn about Bitcoin in easily digestible, bite-size modules. They're interactive and built with beginners in mind."
-      secondImage="/bitcoin_one.png"
-      thirdTitle="3. Weekly audio conversations"
-      thirdSubtitle="Attend regular online gatherings in the app where you can learn about new topics, ask questions and share your learning progress."
-      thirdImage="/online.png"
+  const handlePageScroll = () => {
+    if (parallax.current && parallax.current.current > 600) {
+      setShouldShowNav(true);
+    } else {
+      setShouldShowNav(false);
+    }
+  };
+
+  useEffect(() => {
+    const container = document.querySelector(".scrolling");
+    container.addEventListener("scroll", handlePageScroll);
+    return () => {
+      container.removeEventListener("scroll", handlePageScroll);
+    };
+  }, []);
+
+  const [isMobile, setIsMobile] = useState(
+    window.matchMedia("(max-width: 768px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 768px)")
+      .addEventListener("change", (e) => setIsMobile(e.matches));
+  }, []);
+
+  return (   
+  <>
+    <Parallax pages={18} ref={parallax} className="scrolling">
+      <ParallaxLayer
+        style={{ height: "200px" }}
+        sticky={{ start: 0, end: 17 }}
+      >
+        <Nav
+          shouldShowNav={shouldShowNav}
+          innerRef={parallax}
+        />
+      </ParallaxLayer>
+      <ParallaxLayer
+        offset={0}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundImage:
+            "linear-gradient(90deg, rgba(19, 182, 184, 1) 0%, rgba(73, 208, 190, 1) 100%)",
+        }}
+      >
+        <InView onChange={setInView}>
+          <Headline
+            inView={inView}
+            imageSrc="/floating_person.png"
+          />
+        </InView>
+      </ParallaxLayer>
+      <Summary />
+      <DollarChart isMobile={isMobile} />
+      <Definition />
+      <BtcBackground />
+      <ActualCost />
+      <Introduction />
+      <JippiLogo />
+      <EarnLearnConnect
+        offsetValue={13}
+        headerText="Earn"
+        text="Stacking sats couldn't be simpler. With Jippi, every time you
+                complete a Path or attend a Gathering, you're rewarded with
+                Bitcoin. It's that easy."
+        imageUrl="/earn.png"
       />
-    <Testimonials speechTextOne='"I genuinely look forward to checking in with my tribe each week. It’s nice to feel supported and understood by other Bitcoiners."' speechTextTwo='"Paths are my favorite part of the app. I have learned so much about Bitcoin and I love how simply the information is presented."' speechTextThree='"Before Jippi I was curious about BTC but I never thought I would ever understand it. Now these concepts make way more sense to me."'/>
-    <CallToAction 
-      setIsHidden={setIsHidden}
-      title="Your accessible Bitcoin gateway"
-      subtitle="Jippi helps beginners gain access to the best money ever created. Find your financial freedom today."
-    />
-    <Footer />
-  </> 
+      <EarnLearnConnect
+        offsetValue={14}
+        headerText="Learn"
+        text="Paths are the best way to learn about Bitcoin in easily digestible, bite-size learning modules. They're interactive and built with beginners in mind."
+        imageUrl="/learn.png"
+      />
+      <EarnLearnConnect
+        offsetValue={15}
+        headerText="Connect"
+        text="Join a Tribe to connect with other Bitcoiners and attend live audio conversations called Gatherings. Anyone can join a Gathering to listen and learn from others on their Bitcoin journey."
+        imageUrl="/connect.png"
+      />
+      <CallToAction
+        title="Join Jippi"
+        subtitle="Bitcoin education for the masses."
+        offsetValue={16}
+      />
+      <Footer offsetValue={17} />
+    </Parallax>
+  </>
+  );
 };
 
 export default Home;
