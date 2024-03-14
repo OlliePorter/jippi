@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./footer.module.scss";
 import { ParallaxLayer } from "@react-spring/parallax";
 import { ElectricBolt, X } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const Footer = ({ offsetValue }) => {
   const date = new Date();
@@ -26,13 +27,14 @@ const Footer = ({ offsetValue }) => {
                     </a>
                   </li>
                   <li>
-                    <a
+                    {/* <a
                       href="https://drive.google.com/file/d/1U69BQjYODp1yvkbW4QJ7iad7wVtq07ya/view?usp=sharing"
                       target="_blank"
                       rel="noreferrer"
                     >
                       terms of use
-                    </a>
+                    </a> */}
+                    <Link to={`/terms`}>Your Name</Link>
                   </li>
                 </ul>
               </div>
