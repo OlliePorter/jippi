@@ -8,20 +8,18 @@ const JippiLogo = () => {
 
   return (
     <ParallaxLayer
-      offset={10}
+      offset={12}
       style={{
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        background: '#fff'
+        background: "#171717"
       }}
       
     >
       <InView onChange={setInView}>
         <div className={inView === true ? "show" : "hidden"}>
-          <p className={styles.logo}>
-              jippi
-            </p>
+          <div className={styles.logo} />
         </div>
       </InView>
     </ParallaxLayer>

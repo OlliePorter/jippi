@@ -4,16 +4,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   text-align: center;
+  background-image: linear-gradient(90deg, rgba(19, 182, 184, 1) 0%, rgba(73, 208, 190, 1) 100%);
 
   @media (max-width: 768px) {
     padding: 20px;
   }
 
   .logo {
-    margin-top: 60px;
-    margin-bottom: 38px;
     background: #171717;
     border-radius: 20px;
     width: 96px;
@@ -46,19 +45,6 @@
     @media (min-width: 1281px) {
       width: 96px;
     }
-
-    &.hidden {
-      opacity: 0;
-      filter: blur(5px);
-      transform: translateY(100%);
-      transition: all 1s;
-    }
-
-    &.show {
-      opacity: 1;
-      filter: blur(0);
-      transform: translateY(0);
-    }
   }
 
   .title {
@@ -66,19 +52,7 @@
     color: #171717;
     font-size: 172px;
     margin: 0;
-
-    &.hidden {
-      opacity: 1;
-      filter: blur(5px);
-      transform: translateY(100%);
-      transition: all 1s;
-    }
-
-    &.show {
-      opacity: 0;
-      filter: blur(0);
-      transform: translateY(0);
-    }
+    padding-top: 16px;
 
     /* Media Query for Mobile Devices */
     @media (max-width: 480px) {
@@ -106,79 +80,35 @@
     }
   }
 
-  .image {
-    width: 520px;
-    height: 520px;
-    bottom: 60px;
-    position: absolute;
-    animation-name : myMove;
-    animation-iteration-count : infinite;
-    animation-direction : alternate;
-    animation-duration : 2s;
-
-
-    @keyframes myMove {
-      from {transform: translateY(0px)}
-      to {transform: translateY(20px)}
-    }
+  .paragraph {
+    font-weight: bold;
+    color: #171717;
+    margin: 0;
+    // padding-top: 8px;
 
     /* Media Query for Mobile Devices */
-    @media (max-width: 480px) {
-      width: 280px;
-      height: 280px;
-      bottom: 120px;
+      @media (max-width: 480px) {
+      font-size: 50px;
     }
       
     /* Media Query for low resolution  Tablets, Ipads */
     @media (min-width: 481px) and (max-width: 767px) {
-      width: 520px;
-      height: 520px;
-      bottom: 120px;
+      font-size: 50px;
     }
       
     /* Media Query for Tablets Ipads portrait mode */
     @media (min-width: 768px) and (max-width: 1024px){
-      width: 520px;
-      height: 520px;
-      bottom: 120px;
+      font-size: 50px;
     }
       
     /* Media Query for Laptops and Desktops */
     @media (min-width: 1025px) and (max-width: 1280px){
-      width: 520px;
-      height: 520px;
-      bottom: 60px;
+      font-size: 50px;
     }
       
     /* Media Query for Large screens */
     @media (min-width: 1281px) {
-      width: 520px;
-      height: 520px;
-      bottom: 60px;
+      font-size: 60px;
     }
-  }
-}
-
-.chevron {
-  width: 40px;
-  height: 40px;
-  font-size: 25;
-  position: absolute;
-  bottom: 30px;
-  display: none;
-
-  /* Media Query for Mobile Devices */
-  @media (max-width: 480px) {
-    display: block;
-  }
-    
-  /* Media Query for low resolution  Tablets, Ipads */
-  @media (min-width: 481px) and (max-width: 767px) {
-    display: block;
-  }
-    
-  /* Media Query for Tablets Ipads portrait mode */
-  @media (min-width: 768px) and (max-width: 1024px){
-    display: block;
   }
 }

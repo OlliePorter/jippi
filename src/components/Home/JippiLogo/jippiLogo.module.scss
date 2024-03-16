@@ -1,9 +1,14 @@
 .logo {
-  font-size: 300px;
-  font-weight: 200;
-  font-family: "JippiFont";
-  background: linear-gradient(to top, #13B6B8, #49D0BE);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  padding: 0 50px
+  margin-top: 13px;
+  width: 460px;
+  height: 240px;
+
+  @media (max-width: 480px) {
+    width: 240px;
+    height: 120px;
+  }
+
+  background-image: url(../../../images/jippi_grey.png);
+  background-repeat: round;
+  filter: drop-shadow(0 25px 15px #000000af);
 }

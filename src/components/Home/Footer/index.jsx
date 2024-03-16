@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./footer.module.scss";
 import { ParallaxLayer } from "@react-spring/parallax";
 import { ElectricBolt, X } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const Footer = ({ offsetValue }) => {
   const date = new Date();
@@ -17,22 +18,13 @@ const Footer = ({ offsetValue }) => {
                 <h4>Legal</h4>
                 <ul>
                   <li>
-                    <a
-                      href="https://www.freeprivacypolicy.com/live/7e9a8f54-5d46-441e-b9ad-6a254c42e3d5"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      privacy policy
-                    </a>
+                    <Link to={`/privacy-policy`}>Privacy Policy</Link>
                   </li>
                   <li>
-                    <a
-                      href="https://drive.google.com/file/d/1U69BQjYODp1yvkbW4QJ7iad7wVtq07ya/view?usp=sharing"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      terms of use
-                    </a>
+                    <Link to={`/terms-of-service`}>Terms of Service</Link>
+                  </li>
+                  <li>
+                    <Link to={`/end-user-license-agreement`}>End User License Agreement</Link>
                   </li>
                 </ul>
               </div>
