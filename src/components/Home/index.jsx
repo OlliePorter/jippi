@@ -84,9 +84,7 @@ const Home = () => {
       <EarnLearnConnect
         offsetValue={13}
         headerText="Earn"
-        text="Stacking sats couldn't be simpler. With Jippi, every time you
-                complete a Path or attend a Gathering, you're rewarded with
-                Bitcoin. It's that easy."
+        text="Earning bitcoin couldn't be simpler. With Jippi, every time you complete a Path you're rewarded in bitcoin via the Lightning network. It's that easy."
         imageUrl="/earn.png"
       />
       <EarnLearnConnect
@@ -98,7 +96,7 @@ const Home = () => {
       <EarnLearnConnect
         offsetValue={15}
         headerText="Connect"
-        text="Join a Tribe to connect with other Bitcoiners and attend live audio conversations called Gatherings. Anyone can join a Gathering to listen and learn from others on their Bitcoin journey."
+        text="Join a Tribe to connect with other bitcoiners and attend live audio conversations called Gatherings. Anyone can join a Gathering to learn from Bitcoin thought leaders."
         imageUrl="/connect.png"
       />
       <CallToAction
