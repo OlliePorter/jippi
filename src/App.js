@@ -9,7 +9,7 @@ import TermsOfService from "./components/TermsOfService";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Home from "./components/Home";
 import ErrorPage from "./components/Error";
-import EULA from "./components/ EndUserLicenseAgreement";
+import EULA from "./components/EndUserLicenseAgreement";
 
 const App = () => {
   const router = createBrowserRouter([
