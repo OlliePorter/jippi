@@ -13,7 +13,7 @@ export default function PitchDeck() {
 
   return (
     <div className={styles.cover}>
-      <a ref={buttonRef} href="/jippi_pitch_deck.pdf" target="_blank">Download Jippi Pitch Deck PDF</a>
+      <a ref={buttonRef} href="/jippi_pitch_deck.pdf" target="_blank">Open Jippi Pitch Deck PDF</a>
     </div>
   );
 }
