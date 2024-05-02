@@ -11,4 +11,30 @@
   @media (max-width: 768px) {
     padding: 20px;
   }
+
+  .navButton {
+    cursor: pointer;
+    height: 48px;
+    width: 240px;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #2E2E2E 0%, #171717 100%);
+    box-shadow: 0px 4px 10px 4px rgba(23, 23, 23, 0.30);
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-family: "Nunito";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 200ms ease;
+    font-size: 14px;
+    margin-right: 4%;
+
+    &:hover {
+      transform: translate(0px, -2px);
+    }
+  }
 }
