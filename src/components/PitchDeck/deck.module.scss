@@ -1,0 +1,14 @@
+.cover {
+  font-family: "Nunito";
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(90deg, rgba(19, 182, 184, 1) 0%, rgba(73, 208, 190, 1) 100%);
+
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+}

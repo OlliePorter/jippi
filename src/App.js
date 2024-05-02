@@ -10,6 +10,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import Home from "./components/Home";
 import ErrorPage from "./components/Error";
 import EULA from "./components/EndUserLicenseAgreement";
+import PitchDeck from "./components/PitchDeck";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -29,7 +30,11 @@ const App = () => {
     {
       path: "/end-user-license-agreement",
       element: <EULA />
-    }
+    },
+    {
+      path: "/pitch-deck",
+      element: <PitchDeck />,
+    },
   ]);
 
   return <React.StrictMode><RouterProvider router={router} /></React.StrictMode> 
