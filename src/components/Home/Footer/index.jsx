@@ -26,6 +26,9 @@ const Footer = ({ offsetValue }) => {
                   <li>
                     <Link to={`/end-user-license-agreement`}>End User License Agreement</Link>
                   </li>
+                  <li>
+                    <Link to={`/api-license-agreement`}>API License Agreement</Link>
+                  </li>
                 </ul>
               </div>
               <div className={styles.footerCol}>

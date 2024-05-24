@@ -11,6 +11,7 @@ import Home from "./components/Home";
 import ErrorPage from "./components/Error";
 import EULA from "./components/EndUserLicenseAgreement";
 import PitchDeck from "./components/PitchDeck";
+import ApiLicenseAgreement from "./components/ApiLicenseAgreement";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const App = () => {
       path: "/pitch-deck",
       element: <PitchDeck />,
     },
+    {
+      path: "/api-license-agreement",
+      element: <ApiLicenseAgreement />,
+    }
   ]);
 
   return <React.StrictMode><RouterProvider router={router} /></React.StrictMode> 
