@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./footer.module.scss";
-import { ParallaxLayer } from "@react-spring/parallax";
 import { ElectricBolt, X } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
@@ -10,7 +9,6 @@ const Footer = ({ offsetValue }) => {
 
   return (
     <>
-      <ParallaxLayer offsetValue={offsetValue} offset={offsetValue}>
         <footer className={styles.footer}>
           <div className={styles.container}>
             <div className={styles.row}>
@@ -64,7 +62,6 @@ const Footer = ({ offsetValue }) => {
             </div>
           </div>
         </footer>
-      </ParallaxLayer>
     </>
   );
 };

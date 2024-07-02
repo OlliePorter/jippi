@@ -1,9 +1,9 @@
 .cover {
   font-family: "Nunito";
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 180px;
 
   .capitals {
     color: #13B6B8;
@@ -20,6 +20,20 @@
     color: #171717;
     font-size: 32px;
     font-weight: bold;
+
+    /* Media Query for Mobile Devices */
+    @media (max-width: 480px) {
+      margin-left: 40px;
+      margin-right: 40px;
+      text-align: center;
+    }
+        
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 768px) {
+      margin-left: 40px;
+      margin-right: 40px;
+      text-align: center;
+    }
   }
 
   .subtitle {
@@ -33,6 +47,16 @@
     display: flex;
     flex-direction: row;
 
+    /* Media Query for Mobile Devices */
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
+      
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 768px) {
+      flex-direction: column;
+    }
+
     .column {
       display: flex;
       flex-direction: column;
@@ -41,7 +65,17 @@
       text-align: center;
 
       &:first-of-type {
-        padding-right: 200px;
+        padding-right: 232px;
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 480px) {
+          padding-right: 0;
+        }
+          
+        /* Media Query for low resolution  Tablets, Ipads */
+        @media (min-width: 481px) and (max-width: 768px) {
+          padding-right: 0;
+        }
       }
 
       .image {

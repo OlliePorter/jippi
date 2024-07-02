@@ -1,30 +1,44 @@
 .cover {
   font-family: "Nunito";
-  height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
+  background: linear-gradient(90deg, rgba(19, 182, 184, 1) 0%, rgba(73, 208, 190, 1) 100%);
+  padding-left: 100px;
+  padding-right: 100px;
 
   /* Media Query for Mobile Devices */
   @media (max-width: 480px) {
     flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 96px;
+    padding-bottom: 180px;
   }
       
   /* Media Query for low resolution  Tablets, Ipads */
-  @media (min-width: 481px) and (max-width: 767px) {
+  @media (min-width: 481px) and (max-width: 768px) {
     flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 96px;
+    padding-bottom: 180px;
   }
 
-  /* Media Query for Tablets Ipads portrait mode */
-  @media (min-width: 768px) and (max-width: 1024px){
-    flex-direction: column;
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1024px) and (max-width: 1280px){
+    height: 100vh;
+  }
+    
+  /* Media Query for Large screens */
+  @media (min-width: 1281px) {
+    height: 100vh;
   }
 
   .column {
     display: flex;
-    flex: 3;
     flex-direction: column;
     align-items: start;
     text-align: start;
@@ -35,27 +49,17 @@
         align-items: center;
         text-align: center;
         margin-right: 0;
-        flex: 0;
         margin-bottom: 30px;
       }
           
       /* Media Query for low resolution  Tablets, Ipads */
-      @media (min-width: 481px) and (max-width: 767px) {
+      @media (min-width: 481px) and (max-width: 768px) {
         align-items: center;
         text-align: center;
         margin-right: 0;
-        flex: 0;
         margin-bottom: 60px;
       }
 
-      /* Media Query for Tablets Ipads portrait mode */
-      @media (min-width: 768px) and (max-width: 1024px){
-        align-items: center;
-        text-align: center;
-        margin-right: 0;
-        flex: 0;
-        margin-bottom: 60px;
-      }
 
     .row {
       display: flex;
@@ -64,27 +68,13 @@
       justify-content: center;
       text-align: center;
 
-        /* Media Query for Mobile Devices */
-        @media (max-width: 480px) {
-          padding-top: 40px;
-        }
-      
-        /* Media Query for low resolution  Tablets, Ipads */
-        @media (min-width: 481px) and (max-width: 767px) {
-          padding-top: 40px;
-        }
-
-        /* Media Query for Tablets Ipads portrait mode */
-        @media (min-width: 768px) and (max-width: 1024px){
-          padding-top: 40px;
-        }
-
       .jippiLogo {
         margin-left: 40px;
         width: 180px;
         height: 90px;
         background-image: url(../../../images/jippi_black.png);
         background-repeat: round;
+        display: none;
 
         /* Media Query for Mobile Devices */
         @media (max-width: 480px) {
@@ -93,13 +83,7 @@
         }
       
         /* Media Query for low resolution  Tablets, Ipads */
-        @media (min-width: 481px) and (max-width: 767px) {
-          width: 120px;
-          height: 60px;
-        }
-
-        /* Media Query for Tablets Ipads portrait mode */
-        @media (min-width: 768px) and (max-width: 1024px){
+        @media (min-width: 481px) and (max-width: 768px) {
           width: 120px;
           height: 60px;
         }
@@ -119,16 +103,11 @@
         }
       
         /* Media Query for low resolution  Tablets, Ipads */
-        @media (min-width: 481px) and (max-width: 767px) {
+        @media (min-width: 481px) and (max-width: 768px) {
           width: 64px;
           border-radius: 12px;
         }
 
-        /* Media Query for Tablets Ipads portrait mode */
-        @media (min-width: 768px) and (max-width: 1024px){
-          width: 64px;
-          border-radius: 12px;
-        }
 
         &.hidden {
           opacity: 0;
@@ -158,7 +137,7 @@
       }
       
       /* Media Query for low resolution  Tablets, Ipads */
-      @media (min-width: 481px) and (max-width: 767px) {
+      @media (min-width: 481px) and (max-width: 768px) {
         font-size: 32px;
       }
 
@@ -187,8 +166,6 @@
   }
   
   .container {
-    flex: 1;
-
     .image {
       width: 280px;
       box-shadow: 0px 25px 80px 0px rgba(0, 0, 0, 0.15);

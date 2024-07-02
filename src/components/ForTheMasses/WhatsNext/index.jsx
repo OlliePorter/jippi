@@ -66,58 +66,51 @@ const WhatsNext = () => {
   Modal.defaultStyles.overlay.backgroundColor = '#0636454F';
 
   return (
-    <div>
-      <ParallaxLayer
-        offset={5}
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <InView onChange={setInView}>
-          <div className={inView === true ? "show" : "hidden"}>
-            <div className={styles.cover}>
-              <p className={styles.capitals}>
-                WHAT'S NEXT
-              </p>
-              <p className={styles.title}>
-                Join our beta
-              </p>
-              <img
-                src="/path.png"
-                alt="iPhone showing app education page"
-                className={styles.image}
-              />
-              <p className={styles.subtitle}>
-              Sign up to the waitlist today or get in touch to<br/>help us meet our fundraising goal for our H2<br/>2024 launch.
-              </p>
-              <div className={styles.row}>
-                <button
-                  className={styles.navButton}
-                  onClick={openModal}
-                >
-                  Register
-                </button>
-                <a href="mailto:hello@jippi.app" className={styles.navButtonTwo}>Get in Touch</a>
-              </div>
-              <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="modal"
-                >
-                  <div style={customStyles.row}>
-                  <h2 style={customStyles.modalTitle}>Join the Waitlist</h2>
-                  <span style={customStyles.closeButton} onClick={closeModal}>&times;</span>
-                  </div>
-                  <div id="hubspotForm"></div>
-              </Modal>
-           </div>
+    <div className={styles.cover}>
+      <p className={styles.capitals}>
+        WHAT'S NEXT
+      </p>
+      <p className={styles.title}>
+        Join our beta
+      </p>
+      <img
+        src="/path.png"
+        alt="iPhone showing app education page"
+        className={styles.image}
+      />
+
+      <div className={styles.container}>
+      <div className={styles.spaceContainer}></div>
+        <div className={styles.column}>
+        <span className={styles.subtitle}>
+        Sign up to the waitlist today or get in touch to help us meet our fundraising goal for our H2 2024 launch.
+        </span>
+        <div className={styles.row}>
+        <button
+          className={styles.navButton}
+          onClick={openModal}
+        >
+          Register
+        </button>
+        <a href="mailto:hello@jippi.app" className={styles.navButtonTwo}>Get in Touch</a>
+        </div>
+      </div>
+      <div className={styles.spaceContainer}></div>
+      </div>
+
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="modal"
+        >
+          <div style={customStyles.row}>
+          <h2 style={customStyles.modalTitle}>Join the Waitlist</h2>
+          <span style={customStyles.closeButton} onClick={closeModal}>&times;</span>
           </div>
-        </InView>
-      </ParallaxLayer>
-    </div>
+          <div id="hubspotForm"></div>
+      </Modal>
+    </div> 
   );
 };
 

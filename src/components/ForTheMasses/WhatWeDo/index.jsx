@@ -1,76 +1,61 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./whatWeDo.module.scss";
-import { ParallaxLayer } from "@react-spring/parallax";
-import { InView } from "react-intersection-observer";
 
 const WhatWeDo = () => {
-  const [inView, setInView] = useState(false);
-
   return (
-    <div>
-      <ParallaxLayer
-        offset={2}
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <InView onChange={setInView}>
-          <div className={inView === true ? "show" : "hidden"}>
-            <div className={styles.cover}>
-              <div className={styles.column}>
-                <div className={styles.row}>
-                  <div className={styles.column}>
-                    <p className={styles.capitals}>
-                      WHAT WE DO
-                    </p>
-                    <p className={styles.title}>
-                      Introducing Jippi
-                    </p>
-                    </div>
-                  </div>
-                  <div className={styles.rowTwo}>
-                    <div className={styles.container}>
-                      <div className={styles.iconContainer}>
-                        <img src="/education.png" alt="Graduation cap icon" className={styles.iconTwo} />
-                      </div>
-                      <p className={styles.subtitle}>
-                       <strong>Learn</strong>
-                      </p>
-                      <p className={styles.subtitle}>
-                        Written modules and<br/>audio classes provide<br/>beginner-friendly<br/>education
-                      </p>
-                    </div>
-                    <div className={styles.container}>
-                      <div className={styles.iconContainer}>
-                        <img src="/bitcoin.png" alt="Bitcoin logo icon" className={styles.icon} />
-                      </div>
-       
-                      <p className={styles.subtitle}>
-                       <strong>Earn</strong>
-                      </p>
-                      <p className={styles.subtitle}>
-                        Bitcoin rewards via<br/>Lightning are supplied<br/>to award learning<br/>progress
-                      </p>
-                    </div>
-                    <div className={styles.container}>
-                      <div className={styles.iconContainer}>
-                       <img src="/tribe.png" alt="Camp fire icon" className={styles.icon} />
-                      </div>
-                      <p className={styles.subtitle}>
-                       <strong>Connect</strong>
-                      </p>
-                      <p className={styles.subtitle}>
-                        Online communities<br/>called Tribes offer<br/>support & connection<br/>with other Bitcoiners
-                      </p>
-                    </div>
-                  </div>
-              </div>  
-            </div>
+    <div className={styles.cover}>
+      <div className={styles.row}>
+        <div className={styles.container}></div>
+        <div className={styles.column}>
+          <p className={styles.capitals}>
+            WHAT WE DO
+          </p>
+          <span className={styles.title}>
+            Introducing Jippi
+          </span>
+        </div>
+        <div className={styles.container}></div>
+        <div className={styles.container}></div>
+      </div>
+      <div className={styles.row}>
+        <div className={styles.containerTwo}></div>
+        <div className={styles.containerTwo}></div>
+        <div className={styles.outerIconContainer}>
+          <div className={styles.iconContainer}>
+            <img src="/education.png" alt="Graduation cap icon" className={styles.iconTwo} />
           </div>
-        </InView>
-      </ParallaxLayer>
+          <p className={styles.subtitle}>
+            <strong>Learn</strong>
+          </p>
+          <span className={styles.subtitle}>
+            Written modules and audio classes provide beginner-friendly education
+          </span>
+        </div>
+        <div className={styles.outerIconContainer}>
+          <div className={styles.iconContainer}>
+            <img src="/bitcoin.png" alt="Bitcoin logo icon" className={styles.icon} />
+          </div>
+          <p className={styles.subtitle}>
+            <strong>Earn</strong>
+          </p>
+          <span className={styles.subtitle}>
+            Bitcoin rewards via Lightning are supplied to award learning progress
+          </span>
+        </div>
+        <div className={styles.outerIconContainer}>
+          <div className={styles.iconContainer}>
+            <img src="/tribe.png" alt="Camp fire icon" className={styles.icon} />
+          </div>
+          <p className={styles.subtitle}>
+            <strong>Connect</strong>
+          </p>
+          <span className={styles.subtitle}>
+            Online communities called Tribes offer support & connection with other Bitcoiners
+          </span>
+        </div>
+        <div className={styles.containerTwo}></div>
+        <div className={styles.containerTwo}></div>
+      </div>
     </div>
   );
 };
