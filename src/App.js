@@ -7,7 +7,7 @@ import {
 import "./App.scss";
 import TermsOfService from "./components/TermsOfService";
 import PrivacyPolicy from "./components/PrivacyPolicy";
-import Home from "./components/Home";
+import ForTheMasses from "./components/ForTheMasses";
 import ErrorPage from "./components/Error";
 import EULA from "./components/EndUserLicenseAgreement";
 import PitchDeck from "./components/PitchDeck";
@@ -17,7 +17,7 @@ const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: <ForTheMasses />,
       errorElement: <ErrorPage />,
     },
     {

@@ -1,0 +1,117 @@
+.cover {
+  font-family: "Nunito";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 180px;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+
+    .spaceContainer {
+      flex: 1;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 2;
+
+      .subtitle {
+        margin-top: 16px;
+        margin-bottom: 0px;
+        color: #171717;
+        font-size: 20px;
+        text-align: center;
+      }
+  
+      .row {
+        display: flex;
+    
+        .navButton {
+          margin-top: 40px;
+          cursor: pointer;
+          height: 48px;
+          width: 148px;
+          border-radius: 25px;
+          background: linear-gradient(180deg, #2E2E2E 0%, #171717 100%);
+          box-shadow: 0px 4px 12px 4px rgba(0, 0, 0, 0.38);
+          color: white;
+          border-radius: 12px;
+          text-decoration: none;
+          outline: none;
+          border: none;
+          font-weight: bold;
+          font-family: "Nunito";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: transform 200ms ease;
+          font-size: 14px;
+          margin-right: 24px;
+      
+          @media (max-width: 768px) {
+            width: 120px;
+          }
+      
+          &:hover {
+            transform: translate(0px, -2px);
+          }
+        }
+    
+        .navButtonTwo {
+          margin-top: 40px;
+          cursor: pointer;
+          height: 48px;
+          width: 148px;
+          border-radius: 25px;
+          background: linear-gradient(180deg, #ffff 0%, #d9d9d9 100%);
+          box-shadow: 0px 4px 12px 4px rgba(23, 23, 23, 0.30);
+          color: black;
+          border-radius: 12px;
+          text-decoration: none;
+          outline: none;
+          font-weight: bold;
+          font-family: "Nunito";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: transform 200ms ease;
+          font-size: 14px;
+      
+          @media (max-width: 768px) {
+            width: 120px;
+          }
+      
+          &:hover {
+            transform: translate(0px, -2px);
+          }
+        }
+      }
+    }
+  }
+
+  .capitals {
+    color: #13B6B8;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 4px;
+    font-weight: bold;
+  }
+
+  .title {
+    margin-top: 16px;
+    margin-bottom: 0px;
+    color: #171717;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .image {
+    margin-top: 40px;
+    height: 500px;
+  }
+}

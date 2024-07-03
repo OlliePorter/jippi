@@ -8,11 +8,11 @@ import DollarChart from "./DollarChart";
 import ActualCost from "./ActualCost";
 import Introduction from "./Introduction";
 import EarnLearnConnect from "./EarnLearnConnect";
-import Footer from "./Footer";
+import Footer from "../Footer";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { InView } from "react-intersection-observer";
 import CallToAction from "./CallToAction";
-import JippiLogo from "./JippiLogo";
+import JippiLogo from "../JippiLogo";
 
 const Home = () => {
   const [inView, setInView] = React.useState(false);

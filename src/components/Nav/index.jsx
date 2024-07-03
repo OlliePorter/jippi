@@ -3,10 +3,10 @@ import classNames from "classnames";
 import styles from "./nav.module.scss";
 import Modal from 'react-modal';
 
-const Nav = ({ shouldShowNav, innerRef }) => {
+const Nav = () => {
   const navClassNames = () => {
     return classNames(styles.nav, {
-      [styles.navBlue]: shouldShowNav,
+      [styles.navBlue]: true,
     });
   };
 

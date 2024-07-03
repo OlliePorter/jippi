@@ -1,0 +1,193 @@
+.cover {
+  font-family: "Nunito";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(19, 182, 184, 1) 0%, rgba(73, 208, 190, 1) 100%);
+  padding-left: 100px;
+  padding-right: 100px;
+
+  /* Media Query for Mobile Devices */
+  @media (max-width: 480px) {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 96px;
+    padding-bottom: 180px;
+  }
+      
+  /* Media Query for low resolution  Tablets, Ipads */
+  @media (min-width: 481px) and (max-width: 768px) {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 96px;
+    padding-bottom: 180px;
+  }
+
+  /* Media Query for Laptops and Desktops */
+  @media (min-width: 1024px) and (max-width: 1280px){
+    height: 100vh;
+  }
+    
+  /* Media Query for Large screens */
+  @media (min-width: 1281px) {
+    height: 100vh;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    margin-right: 200px;
+
+      /* Media Query for Mobile Devices */
+      @media (max-width: 480px) {
+        align-items: center;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+          
+      /* Media Query for low resolution  Tablets, Ipads */
+      @media (min-width: 481px) and (max-width: 768px) {
+        align-items: center;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 60px;
+      }
+
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .jippiLogo {
+        margin-left: 40px;
+        width: 180px;
+        height: 90px;
+        background-image: url(../../../images/jippi_black.png);
+        background-repeat: round;
+        display: none;
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 480px) {
+          width: 120px;
+          height: 60px;
+        }
+      
+        /* Media Query for low resolution  Tablets, Ipads */
+        @media (min-width: 481px) and (max-width: 768px) {
+          width: 120px;
+          height: 60px;
+        }
+      }
+
+      .logo {
+        background: #171717;
+        border-radius: 20px;
+        width: 96px;
+        margin-bottom: 0;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 480px) {
+          width: 64px;
+          border-radius: 12px;
+        }
+      
+        /* Media Query for low resolution  Tablets, Ipads */
+        @media (min-width: 481px) and (max-width: 768px) {
+          width: 64px;
+          border-radius: 12px;
+        }
+
+
+        &.hidden {
+          opacity: 0;
+          filter: blur(5px);
+          transform: translateY(100%);
+          transition: all 1s;
+        }
+
+        &.show {
+          opacity: 1;
+          filter: blur(0);
+          transform: translateY(0);
+        }
+      }
+    }
+
+    .title {
+      margin-top: 40px;
+      margin-bottom: 0px;
+      font-weight: bold;
+      color: #171717;
+      font-size: 48px;
+
+      /* Media Query for Mobile Devices */
+      @media (max-width: 480px) {
+        font-size: 30px;
+      }
+      
+      /* Media Query for low resolution  Tablets, Ipads */
+      @media (min-width: 481px) and (max-width: 768px) {
+        font-size: 32px;
+      }
+
+      /* Media Query for Tablets Ipads portrait mode */
+      @media (min-width: 768px) and (max-width: 1024px){
+        font-size: 32px;
+      }
+    }
+
+    .subtitle {
+      margin-top: 20px;
+      margin-bottom: 0px;
+      color: #171717;
+      font-size: 24px;
+
+      /* Media Query for Mobile Devices */
+      @media (max-width: 480px) {
+        font-size: 20px;
+      }
+      
+      /* Media Query for low resolution  Tablets, Ipads */
+      @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 20px;
+      }
+    }
+  }
+  
+  .container {
+    .image {
+      width: 280px;
+      box-shadow: 0px 25px 80px 0px rgba(0, 0, 0, 0.15);
+      border-radius: 55px;
+
+      /* Media Query for Mobile Devices */
+      @media (max-width: 480px) {
+        width: 180px;
+        border-radius: 32px;
+      }
+      
+      /* Media Query for low resolution  Tablets, Ipads */
+      @media (min-width: 481px) and (max-width: 767px) {
+        width: 180px;
+        border-radius: 32px;
+      }
+
+      /* Media Query for Tablets Ipads portrait mode */
+      @media (min-width: 768px) and (max-width: 1024px){
+        width: 220px;
+        border-radius: 32px;
+      }
+    }
+  }
+}
