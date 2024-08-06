@@ -28,7 +28,7 @@ const WhatWeDo = () => {
             <strong>Learn</strong>
           </p>
           <span className={styles.subtitle}>
-            Written modules and audio classes provide beginner-friendly education
+            Written modules and audio classes provide beginner-friendly education.
           </span>
         </div>
         <div className={styles.outerIconContainer}>
@@ -39,7 +39,7 @@ const WhatWeDo = () => {
             <strong>Earn</strong>
           </p>
           <span className={styles.subtitle}>
-            Bitcoin rewards via Lightning are supplied to award learning progress
+            Bitcoin rewards via Lightning are supplied to award learning progress.
           </span>
         </div>
         <div className={styles.outerIconContainer}>
@@ -47,10 +47,10 @@ const WhatWeDo = () => {
             <img src="/tribe.png" alt="Camp fire icon" className={styles.icon} />
           </div>
           <p className={styles.subtitle}>
-            <strong>Connect</strong>
+            <strong>Compete</strong>
           </p>
           <span className={styles.subtitle}>
-            Online communities called Tribes offer support & connection with other Bitcoiners
+            Tribes of friends battle for dominance over their city through quizzes.
           </span>
         </div>
         <div className={styles.containerTwo}></div>

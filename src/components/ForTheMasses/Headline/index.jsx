@@ -10,7 +10,7 @@ const Headline = () => {
           <div className={styles.jippiLogo} />
         </div>
         <p className={styles.title}>Bitcoin education<br/>for the masses</p>
-        <p className={styles.subtitle}>A gamified social education app<br/>for beginners to earn and learn<br/>about Bitcoin with others</p>
+        <p className={styles.subtitle}>A gamified social education app<br/>for beginners to earn and learn<br/>about Bitcoin with others.</p>
       </div>
       <div className={styles.container}>
         <img

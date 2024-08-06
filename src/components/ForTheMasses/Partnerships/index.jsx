@@ -30,7 +30,7 @@ const Partnerships = () => {
               </a>
             </span>
           </div>
-          <p className={styles.text}>We partnered with Bitcoin<br/>Neobank Yopaki to provide<br/>accessible education to the<br/>Mexican population</p>
+          <p className={styles.text}>We partnered with Bitcoin<br/>Neobank Yopaki to provide<br/>accessible education to the<br/>Mexican population.</p>
         </div>
         <div className={styles.column}>
           <img
@@ -50,7 +50,7 @@ const Partnerships = () => {
               </a>
             </span>
           </div>
-          <p className={styles.text}>We progressed to the<br/>semifinals of the TopBuilder<br/>competition which amplified<br/>our visibility and reach to the<br/>global BTC community</p>
+          <p className={styles.text}>We progressed to the<br/>semifinals of the TopBuilder<br/>competition which amplified<br/>our visibility and reach to the<br/>global BTC community.</p>
         </div>
       </div>
     </div>
