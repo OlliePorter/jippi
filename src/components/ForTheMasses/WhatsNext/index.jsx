@@ -68,14 +68,14 @@ const WhatsNext = () => {
   return (
     <div className={styles.cover}>
       <p className={styles.capitals}>
-        WHAT'S NEXT
+        COMING SOON
       </p>
       <p className={styles.title}>
-        Join our beta
+        Tribe Clash
       </p>
       <img
-        src="/path.png"
-        alt="iPhone showing app education page"
+        src="/tribe_clash.png"
+        alt="iPhone showing the Tribe Clash game."
         className={styles.image}
       />
 
@@ -83,7 +83,7 @@ const WhatsNext = () => {
       <div className={styles.spaceContainer}></div>
         <div className={styles.column}>
         <span className={styles.subtitle}>
-        Sign up to the waitlist today or get in touch to help us meet our fundraising goal for our H2 2024 launch.
+        Tribe Clash brings a competitive Bitcoin education game to Jippi. Tribes of friends battle for dominance over a city for a chance to win 0.5 BTC. Complete quizzes, claim territories, win the game.
         </span>
         <div className={styles.row}>
         <button

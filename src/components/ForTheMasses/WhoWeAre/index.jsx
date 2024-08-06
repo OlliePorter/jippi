@@ -21,7 +21,7 @@ const WhoWeAre = () => {
             Bringing financial sovereignty to all 
         </span>
         <span className={styles.subtitle}>
-          We believe that Bitcoin education should be simple, accessible, and free for everyone. Our app helps to equip Bitcoin beginners with the knowledge to achieve financial independence
+          We believe that Bitcoin education should be fun, friendly, and free for everyone. Our app helps to equip Bitcoin beginners with the knowledge to achieve financial independence through gamified education.
         </span>
       </div>
       <div className={styles.container}></div>

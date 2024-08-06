@@ -48,6 +48,7 @@
       margin-bottom: 0px;
       color: #171717;
       font-size: 20px;
+      text-align: center;
     }
 
       .container {
@@ -74,7 +75,7 @@
 
       .containerTwo {
         display: flex;
-        flex: 0.8;
+        flex: 0.7;
         justify-content: center;
       }
 
@@ -83,7 +84,7 @@
         flex-direction: column;
         flex: 2;
         justify-content: center;
-        margin-right: 40px;
+        margin-right: 160px;
 
         /* Media Query for Mobile Devices */
         @media (max-width: 480px) {
@@ -115,7 +116,7 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
 
 
         /* Media Query for Mobile Devices */
@@ -149,7 +150,6 @@
 
           .iconContainer {
             height: 60px;
-            width: 60px;
             display: flex;
             align-items: center;
 
